@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7084681414728380763}
   - component: {fileID: 6862665461918794458}
   - component: {fileID: 5999436272252664251}
+  - component: {fileID: 8310264813269263955}
   m_Layer: 7
   m_Name: Suture
   m_TagString: Untagged
@@ -32,7 +33,8 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4191947366572284983}
+  - {fileID: 8830612817221051252}
+  - {fileID: 2468809019387432712}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -116,7 +118,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5759788063756608424, guid: c630388ed07929e41a94171d82585884, type: 3}
---- !u!1 &5587375086035679601
+--- !u!114 &8310264813269263955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2493145432167964806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc5e218661d91c47913483a8b0f624a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTip: {fileID: 2468809019387432712}
+  ropeSpawn: {fileID: 8830612817221051252}
+  rope: {fileID: 0}
+  collMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!1 &4751593020964074151
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,24 +144,55 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4191947366572284983}
+  - component: {fileID: 2468809019387432712}
   m_Layer: 0
-  m_Name: ropeSpawnLocation
+  m_Name: RefTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4191947366572284983
+--- !u!4 &2468809019387432712
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5587375086035679601}
+  m_GameObject: {fileID: 4751593020964074151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0099, y: -0.0051, z: -0.00009}
-  m_LocalScale: {x: 0.02857143, y: 0.02857143, z: 0.02857143}
+  m_LocalPosition: {x: 0.0129, y: -0.0102, z: -0.0019}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6101388473000028683}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9050674070658400561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8830612817221051252}
+  m_Layer: 7
+  m_Name: Refpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8830612817221051252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9050674070658400561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0102, y: -0.0087, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6101388473000028683}
