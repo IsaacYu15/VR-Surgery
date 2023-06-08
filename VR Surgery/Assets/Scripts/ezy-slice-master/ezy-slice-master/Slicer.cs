@@ -1,18 +1,24 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using EzySlice;
 public class Slicer : MonoBehaviour
 {
+    public bool isPressed;
     public Material materialAfterSlice;
     public LayerMask sliceMask;
     public bool isTouched;
     public float sliceAmount;
 
-    GameObject prevLowerHull;
-    GameObject prevUpperHull;
-
+    public GameObject parentLower;
+    public GameObject parentUpper;
+    public GameObject marker;
+    List<GameObject> markers = new List<GameObject>();
     private void Update()
     {
-        if (isTouched == true)
+
+        if (isTouched == true && isPressed)
         {
             isTouched = false;
 
@@ -20,58 +26,135 @@ public class Slicer : MonoBehaviour
 
             foreach (Collider objectToBeSliced in objectsToBeSliced)
             {
-                SlicedHull slicedObject = SliceObject(objectToBeSliced.gameObject, materialAfterSlice);
 
+                //player to sliceable object directions
+                Vector3 direction = new Vector3(0, 0, -1);
+
+                //sliced objects
+                SlicedHull slicedObject = SliceObject(objectToBeSliced.gameObject, materialAfterSlice);
                 GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, materialAfterSlice);
                 GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, materialAfterSlice);
 
                 Transform slicedTransform = objectToBeSliced.gameObject.transform;
 
-                Vector3 newSliceScale = new Vector3(slicedTransform.localScale.x, slicedTransform.localScale.y, sliceAmount);
-                upperHullGameobject.transform.localScale = newSliceScale;
-                lowerHullGameobject.transform.localScale = newSliceScale;
+                bool breakCase = (slicedTransform.localScale.z - sliceAmount < 0);
 
-                Vector3 direction = new Vector3(0, 0, -1);
-                upperHullGameobject.transform.position = slicedTransform.position + direction * sliceAmount / 2; //FIGURE OUT WHY ITS DOING DAT HALF THING
-                lowerHullGameobject.transform.position = slicedTransform.position + direction * sliceAmount / 2;
-
-
-                sliceAmount += 0.025f; //add a little offset in the slicing
-                GameObject remainingToBeSliced = Instantiate(objectToBeSliced.gameObject, objectToBeSliced.gameObject.transform.position - direction * sliceAmount / 2, objectToBeSliced.gameObject.transform.rotation);
-                newSliceScale = new Vector3(slicedTransform.localScale.x, slicedTransform.localScale.y, slicedTransform.localScale.z - sliceAmount);
-                remainingToBeSliced.transform.localScale = newSliceScale;
-
-                MakeItPhysical(upperHullGameobject, remainingToBeSliced, direction);
-                MakeItPhysical(lowerHullGameobject, remainingToBeSliced, direction);
-
-                if (prevLowerHull != null && prevUpperHull != null)
+                //determine if we should allow the user to keep cutting the object, or remove it as a whole
+                if (!breakCase)
                 {
-                    prevUpperHull.GetComponent<HingeJoint>().connectedBody = upperHullGameobject.GetComponent<Rigidbody>();
-                    prevLowerHull.GetComponent<HingeJoint>().connectedBody = lowerHullGameobject.GetComponent<Rigidbody>();
-                } 
+                    Vector3 newSliceScale = new Vector3(slicedTransform.localScale.x, slicedTransform.localScale.y, sliceAmount);
+                    upperHullGameobject.transform.localScale = newSliceScale;
+                    lowerHullGameobject.transform.localScale = newSliceScale;
 
-                prevLowerHull = lowerHullGameobject;
-                prevUpperHull = upperHullGameobject;
+                    upperHullGameobject.transform.position = slicedTransform.position + direction * (slicedTransform.localScale.z - sliceAmount) / 2;
+                    lowerHullGameobject.transform.position = slicedTransform.position + direction * (slicedTransform.localScale.z - sliceAmount) / 2;
 
+                    GameObject remainingToBeSliced = Instantiate(objectToBeSliced.gameObject, objectToBeSliced.gameObject.transform.position - direction * sliceAmount / 2, objectToBeSliced.gameObject.transform.rotation);
+                    newSliceScale = new Vector3(slicedTransform.localScale.x, slicedTransform.localScale.y, slicedTransform.localScale.z - sliceAmount);
+                    remainingToBeSliced.transform.localScale = newSliceScale;
 
+                }
 
+                //parent all lower and upper hulls together
+                if (parentLower == null || parentUpper == null)
+                {
+                    parentLower = lowerHullGameobject;
+                    parentUpper = upperHullGameobject;
+                    parentLower.gameObject.name += ("PARENT");
+                    parentUpper.gameObject.name += ("PARENT");
+                }
+                else
+                {
+                    lowerHullGameobject.transform.parent = parentLower.transform;
+                    upperHullGameobject.transform.parent = parentUpper.transform;
+                }
+
+                Vector3 clonePos = new Vector3(marker.transform.position.x, parentLower.transform.position.y, marker.transform.position.z);
+                GameObject markerClone = Instantiate(marker, clonePos, marker.transform.rotation);
+                markerClone.GetComponent<MeshRenderer>().enabled = true;
+                markers.Add(markerClone);
+
+                //destroy curr obj, to be replaced with the shrunken one and init the sliced objs
                 Destroy(objectToBeSliced.gameObject);
+
+                MakeItPhysical(upperHullGameobject);
+                MakeItPhysical(lowerHullGameobject);
+                
+                //merge to one mesh
+                if (breakCase)
+                {
+                    combineMeshChildren(parentLower.transform);
+                    combineMeshChildren(parentUpper.transform);
+
+                    foreach(GameObject go in markers)
+                    {
+                        Destroy(go);
+                    }
+                }
+
+                isPressed = false;
+                break;
+
             }
         }
     }
 
-    private void MakeItPhysical(GameObject obj, GameObject connectedTo, Vector3 dir)
+    public void combineMeshChildren (Transform parent) {
+        MeshFilter[] meshFilters = parent.GetComponentsInChildren<MeshFilter>();
+        CombineInstance[] combine = new CombineInstance[meshFilters.Length];
+
+        for (int i = 0; i < meshFilters.Length; i++)
+        {
+            Mesh mShared = meshFilters[i].sharedMesh;
+
+            combine[i].mesh = mShared;
+            combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
+
+            if (mShared.subMeshCount > 1)
+            {
+                // combine submeshes
+                for (int j = 1; j < mShared.subMeshCount; j++)
+                {
+                    CombineInstance ci = new CombineInstance();
+                    ci.mesh = mShared;
+                    ci.subMeshIndex = j;
+                    ci.transform = meshFilters[i].transform.localToWorldMatrix;
+                }
+            }
+        }
+        
+        
+        //new merged mesh
+        GameObject go = new GameObject(parent.gameObject.name + "_Merged");
+
+        go.AddComponent<MeshFilter>();
+        MeshFilter goFilter = go.GetComponent<MeshFilter>();
+        goFilter.mesh = new Mesh();
+        goFilter.mesh.CombineMeshes(combine);
+
+
+
+        go.AddComponent<MeshRenderer>();
+        go.AddComponent<MeshCollider>();
+        MeshCollider meshCol = go.GetComponent<MeshCollider>();
+        meshCol.convex = enabled;
+        meshCol.sharedMesh = goFilter.sharedMesh;
+        go.GetComponent<MeshRenderer>().material = parent.GetComponent<MeshRenderer>().material;
+        go.AddComponent<Rigidbody>();
+
+
+        Destroy(parent.gameObject);
+
+
+
+    }
+
+    private void MakeItPhysical(GameObject obj)
     {
         obj.AddComponent<MeshCollider>().convex = true;
         obj.AddComponent<Rigidbody>();
-        HingeJoint j = obj.AddComponent<HingeJoint>();
-        j.connectedBody = connectedTo.GetComponent<Rigidbody>();
-        j.autoConfigureConnectedAnchor = false;
-        j.connectedAnchor = dir * sliceAmount;
-        j.anchor -= dir * sliceAmount / 2;
-
-
-
+        Rigidbody rb = obj.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
     private SlicedHull SliceObject(GameObject obj, Material crossSectionMaterial = null)

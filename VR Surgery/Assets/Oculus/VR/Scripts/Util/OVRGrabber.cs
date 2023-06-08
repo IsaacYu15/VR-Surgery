@@ -30,7 +30,7 @@ public class OVRGrabber : MonoBehaviour
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
-
+    public Animator animator;
     // Demonstrates parenting the held object to the hand's transform when grabbed.
     // When false, the grabbed object is moved every FixedUpdate using MovePosition.
     // Note that MovePosition is required for proper physics simulation. If you set this to true, you can
@@ -143,10 +143,11 @@ public class OVRGrabber : MonoBehaviour
     // visible artifacts.
     virtual public void Update()
     {
-        if (m_operatingWithoutOVRCameraRig)
-        {
-            OnUpdatedAnchors();
-        }
+        //if (m_operatingWithoutOVRCameraRig)
+        //{
+        //    OnUpdatedAnchors();
+        // }
+        OnUpdatedAnchors();
     }
 
     // Hands follow the touch anchors by calling MovePosition each frame to reach the anchor.
@@ -225,11 +226,11 @@ public class OVRGrabber : MonoBehaviour
 
     protected void CheckForGrabOrRelease(float prevFlex)
     {
-        if ((m_prevFlex >= grabBegin) && (prevFlex < grabBegin))
+        if ((m_prevFlex >= grabBegin) && (prevFlex < grabBegin) || Input.GetKeyDown(KeyCode.B))
         {
             GrabBegin();
         }
-        else if ((m_prevFlex <= grabEnd) && (prevFlex > grabEnd))
+        else if ((m_prevFlex <= grabEnd) && (prevFlex > grabEnd) || Input.GetKeyUp(KeyCode.B))
         {
             GrabEnd();
         }
@@ -237,6 +238,8 @@ public class OVRGrabber : MonoBehaviour
 
     protected virtual void GrabBegin()
     {
+        animator.SetBool("grab", true);
+
         float closestMagSq = float.MaxValue;
         OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
@@ -354,6 +357,8 @@ public class OVRGrabber : MonoBehaviour
 
     protected void GrabEnd()
     {
+        animator.SetBool("grab", false);
+
         if (m_grabbedObj != null)
         {
             OVRPose localPose = new OVRPose

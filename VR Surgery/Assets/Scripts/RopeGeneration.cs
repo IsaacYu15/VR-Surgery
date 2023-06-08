@@ -24,7 +24,7 @@ public class RopeGeneration : MonoBehaviour
 
         for (int i = 0; i < numberPoints; i ++)
         {
-            currPos += new Vector3(pointSpacing, 0, 0);
+            currPos += new Vector3(0, pointSpacing, 0);
 
             GameObject go = Instantiate(ropePointPref, currPos, Quaternion.identity);
             go.transform.parent = transform;

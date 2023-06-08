@@ -1,14 +1,39 @@
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Allows grabbing and throwing of objects with the OVRGrabbable component on them.
+/// </summary>
+[RequireComponent(typeof(Rigidbody))]
 public class OVRSnip : MonoBehaviour
 {
+
+    public Animator animator;
+    public Slicer slicer;
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
-    public GameObject slicerComponent;
-    public Animator animator;
+
     // Demonstrates parenting the held object to the hand's transform when grabbed.
     // When false, the grabbed object is moved every FixedUpdate using MovePosition.
     // Note that MovePosition is required for proper physics simulation. If you set this to true, you can
@@ -30,6 +55,10 @@ public class OVRSnip : MonoBehaviour
     // Also used for ranking grab targets in case of multiple candidates.
     [SerializeField]
     protected Transform m_gripTransform = null;
+
+    // Child/attached Colliders to detect candidate grabbable objects.
+    [SerializeField]
+    protected Collider[] m_grabVolumes = null;
 
     // Should be OVRInput.Controller.LTouch or OVRInput.Controller.RTouch.
     [SerializeField]
@@ -117,10 +146,13 @@ public class OVRSnip : MonoBehaviour
     // visible artifacts.
     virtual public void Update()
     {
-        if (m_operatingWithoutOVRCameraRig)
-        {
-            OnUpdatedAnchors();
-        }
+
+        //if (m_operatingWithoutOVRCameraRig)
+        //{
+        //    OnUpdatedAnchors();
+        //}
+
+        OnUpdatedAnchors();
     }
 
     // Hands follow the touch anchors by calling MovePosition each frame to reach the anchor.
@@ -137,6 +169,11 @@ public class OVRSnip : MonoBehaviour
             GetComponent<Rigidbody>().MoveRotation(destRot);
         }
 
+        if (!m_parentHeldObject)
+        {
+            MoveGrabbedObject(destPos, destRot);
+        }
+
         m_lastPos = transform.position;
         m_lastRot = transform.rotation;
 
@@ -145,6 +182,51 @@ public class OVRSnip : MonoBehaviour
         m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, m_controller);
 
         CheckForGrabOrRelease(prevFlex);
+    }
+
+    void OnDestroy()
+    {
+        if (m_grabbedObj != null)
+        {
+            GrabEnd();
+        }
+    }
+
+    void OnTriggerEnter(Collider otherCollider)
+    {
+        // Get the grab trigger
+        OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ??
+                                 otherCollider.GetComponentInParent<OVRGrabbable>();
+        if (grabbable == null) return;
+
+        // Add the grabbable
+        int refCount = 0;
+        m_grabCandidates.TryGetValue(grabbable, out refCount);
+        m_grabCandidates[grabbable] = refCount + 1;
+    }
+
+    void OnTriggerExit(Collider otherCollider)
+    {
+        OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ??
+                                 otherCollider.GetComponentInParent<OVRGrabbable>();
+        if (grabbable == null) return;
+
+        // Remove the grabbable
+        int refCount = 0;
+        bool found = m_grabCandidates.TryGetValue(grabbable, out refCount);
+        if (!found)
+        {
+            return;
+        }
+
+        if (refCount > 1)
+        {
+            m_grabCandidates[grabbable] = refCount - 1;
+        }
+        else
+        {
+            m_grabCandidates.Remove(grabbable);
+        }
     }
 
     protected void CheckForGrabOrRelease(float prevFlex)
@@ -161,14 +243,73 @@ public class OVRSnip : MonoBehaviour
 
     protected void GrabBegin()
     {
-        slicerComponent.SetActive(true);
         animator.SetBool("cut", true);
+        slicer.isPressed = true;
     }
 
     protected void GrabEnd()
     {
-        slicerComponent.SetActive(false);
         animator.SetBool("cut", false);
+        slicer.isPressed = false;
+    }
+
+
+    protected virtual void MoveGrabbedObject(Vector3 pos, Quaternion rot, bool forceTeleport = false)
+    {
+        if (m_grabbedObj == null)
+        {
+            return;
+        }
+
+        Rigidbody grabbedRigidbody = m_grabbedObj.grabbedRigidbody;
+        Vector3 grabbablePosition = pos + rot * m_grabbedObjectPosOff;
+        Quaternion grabbableRotation = rot * m_grabbedObjectRotOff;
+
+        if (forceTeleport)
+        {
+            grabbedRigidbody.transform.position = grabbablePosition;
+            grabbedRigidbody.transform.rotation = grabbableRotation;
+        }
+        else
+        {
+            grabbedRigidbody.MovePosition(grabbablePosition);
+            grabbedRigidbody.MoveRotation(grabbableRotation);
+        }
+    }
+
+    protected void GrabbableRelease(Vector3 linearVelocity, Vector3 angularVelocity)
+    {
+        m_grabbedObj.GrabEnd(linearVelocity, angularVelocity);
+        if (m_parentHeldObject) m_grabbedObj.transform.parent = null;
+        m_grabbedObj = null;
+    }
+
+    protected virtual void GrabVolumeEnable(bool enabled)
+    {
+        if (m_grabVolumeEnabled == enabled)
+        {
+            return;
+        }
+
+        m_grabVolumeEnabled = enabled;
+        for (int i = 0; i < m_grabVolumes.Length; ++i)
+        {
+            Collider grabVolume = m_grabVolumes[i];
+            grabVolume.enabled = m_grabVolumeEnabled;
+        }
+
+        if (!m_grabVolumeEnabled)
+        {
+            m_grabCandidates.Clear();
+        }
+    }
+
+    protected virtual void OffhandGrabbed(OVRGrabbable grabbable)
+    {
+        if (m_grabbedObj == grabbable)
+        {
+            GrabbableRelease(Vector3.zero, Vector3.zero);
+        }
     }
 
     protected void SetPlayerIgnoreCollision(GameObject grabbable, bool ignore)
@@ -187,5 +328,4 @@ public class OVRSnip : MonoBehaviour
             }
         }
     }
-
 }
