@@ -234,6 +234,11 @@ public class OVRGrabber : MonoBehaviour
         {
             GrabEnd();
         }
+
+        if (Input.GetKey(KeyCode.C))
+        {
+            gameObject.GetComponent<Rigidbody>().velocity = transform.up * 5;
+        }
     }
 
     protected virtual void GrabBegin()
@@ -387,6 +392,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected void GrabbableRelease(Vector3 linearVelocity, Vector3 angularVelocity)
     {
+        Debug.Log("yes");
         m_grabbedObj.GrabEnd(linearVelocity, angularVelocity);
         if (m_parentHeldObject) m_grabbedObj.transform.parent = null;
         m_grabbedObj = null;
