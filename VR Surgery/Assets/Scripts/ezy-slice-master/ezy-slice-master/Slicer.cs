@@ -13,8 +13,12 @@ public class Slicer : MonoBehaviour
 
     public GameObject parentLower;
     public GameObject parentUpper;
-    public GameObject marker;
-    List<GameObject> markers = new List<GameObject>();
+    public GameObject refTip;
+    public Color [] tints;
+
+    public List<Vector3> allCutPoints = new List<Vector3>();
+    public float inaccuracy;
+
     private void Update()
     {
 
@@ -26,7 +30,6 @@ public class Slicer : MonoBehaviour
 
             foreach (Collider objectToBeSliced in objectsToBeSliced)
             {
-
                 //player to sliceable object directions
                 Vector3 direction = new Vector3(0, 0, -1);
 
@@ -34,8 +37,13 @@ public class Slicer : MonoBehaviour
                 SlicedHull slicedObject = SliceObject(objectToBeSliced.gameObject, materialAfterSlice);
                 GameObject upperHullGameobject = slicedObject.CreateUpperHull(objectToBeSliced.gameObject, materialAfterSlice);
                 GameObject lowerHullGameobject = slicedObject.CreateLowerHull(objectToBeSliced.gameObject, materialAfterSlice);
-
                 Transform slicedTransform = objectToBeSliced.gameObject.transform;
+
+                //slice amount
+                Vector3 edgeOfSliced = slicedTransform.position + direction * slicedTransform.localScale.z / 2;
+                sliceAmount = Mathf.Abs(refTip.transform.position.z - edgeOfSliced.z);
+
+                allCutPoints.Add(refTip.transform.position);
 
                 bool breakCase = (slicedTransform.localScale.z - sliceAmount < 0);
 
@@ -49,9 +57,10 @@ public class Slicer : MonoBehaviour
                     upperHullGameobject.transform.position = slicedTransform.position + direction * (slicedTransform.localScale.z - sliceAmount) / 2;
                     lowerHullGameobject.transform.position = slicedTransform.position + direction * (slicedTransform.localScale.z - sliceAmount) / 2;
 
-                    GameObject remainingToBeSliced = Instantiate(objectToBeSliced.gameObject, objectToBeSliced.gameObject.transform.position - direction * sliceAmount / 2, objectToBeSliced.gameObject.transform.rotation);
+                    Vector3 newPos = objectToBeSliced.gameObject.transform.position - direction * sliceAmount / 2;
                     newSliceScale = new Vector3(slicedTransform.localScale.x, slicedTransform.localScale.y, slicedTransform.localScale.z - sliceAmount);
-                    remainingToBeSliced.transform.localScale = newSliceScale;
+                    slicedTransform.position = newPos;
+                    slicedTransform.localScale = newSliceScale;
 
                 }
 
@@ -69,28 +78,34 @@ public class Slicer : MonoBehaviour
                     upperHullGameobject.transform.parent = parentUpper.transform;
                 }
 
-                Vector3 clonePos = new Vector3(marker.transform.position.x, parentLower.transform.position.y, marker.transform.position.z);
-                GameObject markerClone = Instantiate(marker, clonePos, marker.transform.rotation);
-                markerClone.GetComponent<MeshRenderer>().enabled = true;
-                markers.Add(markerClone);
 
-                //destroy curr obj, to be replaced with the shrunken one and init the sliced objs
-                Destroy(objectToBeSliced.gameObject);
 
                 MakeItPhysical(upperHullGameobject);
                 MakeItPhysical(lowerHullGameobject);
-                
+
+                Color lowerColor = tints[Random.Range(0, tints.Length)];
+                Color upperColor = tints[Random.Range(0, tints.Length)];
+                upperHullGameobject.GetComponent<MeshRenderer>().material.color = upperColor;
+
+                while (upperColor.Equals(lowerColor))
+                {
+                    lowerColor = tints[Random.Range(0, tints.Length)];
+                }
+
+                lowerHullGameobject.GetComponent<MeshRenderer>().material.color = lowerColor;
+
                 //merge to one mesh
                 if (breakCase)
                 {
+                    slicedTransform.gameObject.GetComponent<generateRandomCutPattern>().getPoints(allCutPoints);
+                    inaccuracy = slicedTransform.gameObject.GetComponent<generateRandomCutPattern>().inaccuracyDistance;
+
                     combineMeshChildren(parentLower.transform);
                     combineMeshChildren(parentUpper.transform);
-
-                    foreach(GameObject go in markers)
-                    {
-                        Destroy(go);
-                    }
+                    Destroy(slicedTransform.gameObject);
                 }
+
+
 
                 isPressed = false;
                 break;
@@ -123,30 +138,31 @@ public class Slicer : MonoBehaviour
             }
         }
         
-        
-        //new merged mesh
+        //new merged mesh -> add the right properties
         GameObject go = new GameObject(parent.gameObject.name + "_Merged");
 
         go.AddComponent<MeshFilter>();
         MeshFilter goFilter = go.GetComponent<MeshFilter>();
         goFilter.mesh = new Mesh();
-        goFilter.mesh.CombineMeshes(combine);
-
-
+        goFilter.mesh.CombineMeshes(combine); //combine func
 
         go.AddComponent<MeshRenderer>();
+        go.AddComponent<BoxCollider>();
+        /*
         go.AddComponent<MeshCollider>();
         MeshCollider meshCol = go.GetComponent<MeshCollider>();
         meshCol.convex = enabled;
         meshCol.sharedMesh = goFilter.sharedMesh;
+        */
+
         go.GetComponent<MeshRenderer>().material = parent.GetComponent<MeshRenderer>().material;
+        go.GetComponent<MeshRenderer>().material.color = Color.white;
         go.AddComponent<Rigidbody>();
 
+        go.AddComponent<OVRGrabbable>();
+        go.GetComponent<OVRGrabbable>().enabled = true;
 
         Destroy(parent.gameObject);
-
-
-
     }
 
     private void MakeItPhysical(GameObject obj)

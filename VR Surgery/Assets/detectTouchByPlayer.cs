@@ -17,7 +17,6 @@ public class detectTouchByPlayer : MonoBehaviour
         cubes = gameManager.grabCubes;
     }
 
-
     private void OnTriggerEnter(Collider collision)
     {
         Debug.Log(collision.gameObject.name);

@@ -145,19 +145,23 @@ public class OVRGrabbable : MonoBehaviour
 
     void Awake()
     {
-        if (m_grabPoints.Length == 0)
-        {
-            // Get the collider from the grabbable
-            Collider collider = this.GetComponent<Collider>();
-            if (collider == null)
-            {
-                throw new ArgumentException("Grabbables cannot have zero grab points and no collider " +
-                                            "-- please add a grab point or collider.");
-            }
+        if (m_grabPoints == null) { setColliders(); } //added an additional case that can occur when you ADD this script to an object
 
-            // Create a default grab point
-            m_grabPoints = new Collider[1] { collider };
+        if (m_grabPoints.Length == 0) { setColliders(); } 
+    }
+
+    protected void setColliders ()
+    {
+        // Get the collider from the grabbable
+        Collider collider = this.GetComponent<Collider>();
+        if (collider == null)
+        {
+            throw new ArgumentException("Grabbables cannot have zero grab points and no collider " +
+                                        "-- please add a grab point or collider.");
         }
+
+        // Create a default grab point
+        m_grabPoints = new Collider[1] { collider };
     }
 
     protected virtual void Start()
