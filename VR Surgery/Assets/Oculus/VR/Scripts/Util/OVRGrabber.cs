@@ -25,12 +25,15 @@ using UnityEngine;
 /// Allows grabbing and throwing of objects with the OVRGrabbable component on them.
 /// </summary>
 [RequireComponent(typeof(Rigidbody))]
+
 public class OVRGrabber : MonoBehaviour
 {
+
     // Grip trigger thresholds for picking up objects, with some hysteresis.
     public float grabBegin = 0.55f;
     public float grabEnd = 0.35f;
     public Animator animator;
+    public float throwSpeed = 5f;
     // Demonstrates parenting the held object to the hand's transform when grabbed.
     // When false, the grabbed object is moved every FixedUpdate using MovePosition.
     // Note that MovePosition is required for proper physics simulation. If you set this to true, you can
@@ -130,6 +133,8 @@ public class OVRGrabber : MonoBehaviour
 
         // We're going to setup the player collision to ignore the hand collision.
         SetPlayerIgnoreCollision(gameObject, true);
+
+        lastPosition = transform.position;
     }
 
     // Using Update instead of FixedUpdate. Doing this in FixedUpdate causes visible judder even with
@@ -141,6 +146,10 @@ public class OVRGrabber : MonoBehaviour
     // the held object will see an incorrect velocity (because the move will occur over the time of the
     // physics tick, not the render tick), and will respond to the incorrect velocity with potentially
     // visible artifacts.
+
+    Vector3 lastPosition;
+    public Vector3 velocity;
+
     virtual public void Update()
     {
         //if (m_operatingWithoutOVRCameraRig)
@@ -148,6 +157,8 @@ public class OVRGrabber : MonoBehaviour
         //    OnUpdatedAnchors();
         // }
         OnUpdatedAnchors();
+        velocity = (transform.position - lastPosition)/ Time.deltaTime;
+        lastPosition = transform.position;
     }
 
     // Hands follow the touch anchors by calling MovePosition each frame to reach the anchor.
@@ -379,7 +390,7 @@ public class OVRGrabber : MonoBehaviour
             localPose = localPose * offsetPose;
 
             OVRPose trackingSpace = transform.ToOVRPose() * localPose.Inverse();
-            Vector3 linearVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerVelocity(m_controller);
+            Vector3 linearVelocity = velocity * throwSpeed;
             Vector3 angularVelocity =
                 trackingSpace.orientation * OVRInput.GetLocalControllerAngularVelocity(m_controller);
 
@@ -392,7 +403,7 @@ public class OVRGrabber : MonoBehaviour
 
     protected void GrabbableRelease(Vector3 linearVelocity, Vector3 angularVelocity)
     {
-        Debug.Log("yes");
+
         m_grabbedObj.GrabEnd(linearVelocity, angularVelocity);
         if (m_parentHeldObject) m_grabbedObj.transform.parent = null;
         m_grabbedObj = null;

@@ -21,7 +21,11 @@ public class returnToMenuButton : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        held = true;
+        if (other.transform.root.gameObject.name == "OVRPlayerController")
+        {
+            held = true;
+        }
+
     }
 
     public void OnTriggerExit(Collider other)

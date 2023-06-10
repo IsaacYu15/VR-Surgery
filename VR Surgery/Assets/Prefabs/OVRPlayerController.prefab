@@ -815,8 +815,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
-  m_Center: {x: -0.16, y: -0.14, z: 0.56}
+  m_Radius: 0.06
+  m_Center: {x: -0.1, y: -0.18, z: 0.6}
 --- !u!114 &8192253994803760512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,6 +832,7 @@ MonoBehaviour:
   grabBegin: 0.55
   grabEnd: 0.35
   animator: {fileID: 8274019754549428808}
+  throwSpeed: 5
   m_parentHeldObject: 1
   m_moveHandPosition: 0
   m_gripTransform: {fileID: 8196368194603710298}
@@ -840,6 +841,7 @@ MonoBehaviour:
   m_controller: 2
   m_parentTransform: {fileID: 0}
   m_player: {fileID: 0}
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &8192253995528706818
 GameObject:
   m_ObjectHideFlags: 0
