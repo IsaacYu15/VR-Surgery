@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_AnchorMax.x
@@ -413,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534345855542488058, guid: 98f6b17e155eac04b8816fb204d89c0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.173
+      value: -0.225
       objectReference: {fileID: 0}
     - target: {fileID: 1534345855542488058, guid: 98f6b17e155eac04b8816fb204d89c0e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753276162237531827, guid: 98f6b17e155eac04b8816fb204d89c0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.21
+      value: 0.169
       objectReference: {fileID: 0}
     - target: {fileID: 1753276162237531827, guid: 98f6b17e155eac04b8816fb204d89c0e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -768,7 +768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &967485803
 Rigidbody:
@@ -910,7 +910,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6552324884126276961, guid: b005bf4e9f77e544cb81664aa7190aaf, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6552324884126276961, guid: b005bf4e9f77e544cb81664aa7190aaf, type: 3}
       propertyPath: m_LocalScale.x
@@ -1552,7 +1552,7 @@ Transform:
   m_Children:
   - {fileID: 1974618874}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &8130225763857669258
 MeshCollider:
