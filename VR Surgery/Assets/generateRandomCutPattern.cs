@@ -5,12 +5,15 @@ using UnityEngine;
 public class generateRandomCutPattern : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject sphere;
+    public Material patternMat;
+    public Material playerMat;
+
     public int numberChangesInDirection;
 
     public List<Vector3> pointsToCut = new List<Vector3>();
     LineRenderer lineRender;
-
-    public GameObject test;
 
     float boundsXend;
     float boundsXstart;
@@ -35,7 +38,6 @@ public class generateRandomCutPattern : MonoBehaviour
             currZvalue = boundsZstart;
 
             lineRender = gameObject.GetComponent<LineRenderer>();
-            Debug.Log("START: " + boundsZstart + " " + boundsZend);
 
             generatePattern();
         }
@@ -83,8 +85,11 @@ public class generateRandomCutPattern : MonoBehaviour
                 playerIndex++;
             }
 
-            Instantiate(test, new Vector3(patternX, transform.position.y, trackingZ), Quaternion.identity);
-            Instantiate(test, new Vector3(playerX, transform.position.y, trackingZ), Quaternion.identity); ;
+            GameObject pat = Instantiate(sphere, new Vector3(patternX, transform.position.y, trackingZ), Quaternion.identity);
+            pat.GetComponent<MeshRenderer>().material = patternMat;
+            GameObject pla = Instantiate(sphere, new Vector3(playerX, transform.position.y, trackingZ), Quaternion.identity);
+            pla.GetComponent<MeshRenderer>().material = playerMat;
+
 
             float patternSlope = (pointsToCut[patternIndex].x - pointsToCut[patternIndex + 1].x) / (pointsToCut[patternIndex].z - pointsToCut[patternIndex + 1].z) * step;
             float playerSlope = (player[playerIndex].x - player[playerIndex + 1].x) / (player[playerIndex].z - player[playerIndex + 1].z) * step;

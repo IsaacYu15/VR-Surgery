@@ -17,7 +17,7 @@ public class detectTouchByPlayer : MonoBehaviour
         cubes = gameManager.grabCubes;
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
 
         if (collision.gameObject.transform.root.gameObject.name == "OVRPlayerController")
@@ -28,7 +28,7 @@ public class detectTouchByPlayer : MonoBehaviour
 
     }
 
-    private void OnTriggerStay(Collider collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.transform.root.gameObject.name == "OVRPlayerController")
         {
@@ -48,14 +48,13 @@ public class detectTouchByPlayer : MonoBehaviour
 
     }
 
-    private void OnTriggerExit(Collider collision)
+    private void OnCollisionExit(Collision collision)
     {
         for (int i = 0; i < cubes.Length; i++)
         {
             if (collision.gameObject.name.Equals(cubes[i].name))
             {
                 completed = false;
-                Debug.Log(collision.gameObject.name);
             }
         }
     }

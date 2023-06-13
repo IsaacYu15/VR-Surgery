@@ -19,6 +19,7 @@ public class lessonGrabbingManager : MonoBehaviour
 
     public void Awake()
     {
+        currScore = maxScore;
         grabCubes = getChildren(grabCubeParent.transform);
         grabContainers = getChildren(grabContainerParent.transform);
 
@@ -33,18 +34,16 @@ public class lessonGrabbingManager : MonoBehaviour
                 grabCubes[i].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
 
-            scoreCounter.text = "YOU WIN WITH A SCORE OF: " + Mathf.Round(currScore * 100f) / 100f;
+            scoreCounter.text = "FINAL SCORE: " + Mathf.Round(currScore * 100f) / 100f;
 
         } else
         {
-            currScore = maxScore;
+            currScore -= Time.deltaTime * 0.25f;
 
-            for (int i = 0; i < grabContainers.Length; i++)
+            if (currScore < 0)
             {
-                detectTouchByPlayer playerTouch = grabContainers[i].GetComponentInChildren<detectTouchByPlayer>();
-                currScore -= playerTouch.touchCounter;
+                currScore = 0;
             }
-
 
             scoreCounter.text = "Score: " + Mathf.Round(currScore * 100f) / 100f;
         }

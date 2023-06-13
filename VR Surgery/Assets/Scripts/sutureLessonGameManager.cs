@@ -32,7 +32,7 @@ public class sutureLessonGameManager : MonoBehaviour
     {
 
         maxVelocity = Mathf.Round(Random.Range(0.3f, 1f) * 10) / 10;
-        maxNeedleVelocity.text = "Max Velocity: " + maxVelocity + " m/s";
+        maxNeedleVelocity.text = "Velocity to Stay under: " + maxVelocity + " m/s";
         sutureBounds = suture.GetComponent<sutureInBounds>();
         rope = suture.GetComponent<Rope>();
 
@@ -114,6 +114,12 @@ public class sutureLessonGameManager : MonoBehaviour
             }
 
             score = 100 + touchPunishment * 2f + velocityPunishment * 5f;
+
+            if (score < 0)
+            {
+                score = 0;
+            }
+
             scoreText.text = "SCORE: " + Mathf.Round(score * 100) / 100;
 
             if (passedThroughs == surgicalRings.Length & !suture.GetComponent<sutureInBounds>().colInMesh & !suture.GetComponent<sutureInBounds>().wasIn && allRingsHit())
