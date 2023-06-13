@@ -10,9 +10,9 @@ public class Rope : MonoBehaviour
     public LineRenderer rope;
     public LayerMask collMask;
 
-    public List<Vector3> ropePositions { get; set; } = new List<Vector3>();
+    public List<Transform> ropePositions { get; set; } = new List<Transform>();
 
-    private void Awake() => AddPosToRope(firstPos.position);
+    private void Awake() => AddPosToRope(firstPos);
 
     private void Update()
     {
@@ -29,7 +29,11 @@ public class Rope : MonoBehaviour
         if (Physics.Linecast(playerTip.position, rope.GetPosition(ropePositions.Count - 2), out hit, collMask))
         {
             ropePositions.RemoveAt(ropePositions.Count - 1);
-            AddPosToRope(hit.point);
+
+            GameObject go = new GameObject();
+            go.transform.position = hit.point;
+            go.transform.parent = hit.transform.root.transform;
+            AddPosToRope(go.transform);
         }
     }
 
@@ -42,16 +46,21 @@ public class Rope : MonoBehaviour
         }
     }
 
-    private void AddPosToRope(Vector3 _pos)
+    private void AddPosToRope(Transform _pos)
     {
         ropePositions.Add(_pos);
-        ropePositions.Add(ropeSpawn.position); //Always the last pos must be the player
+        ropePositions.Add(ropeSpawn); //Always the last pos must be the player
     }
 
     private void UpdateRopePositions()
     {
         rope.positionCount = ropePositions.Count;
-        rope.SetPositions(ropePositions.ToArray());
+
+        for (int i =0;i < rope.positionCount; i ++)
+        {
+            rope.SetPosition(i, ropePositions[i].position);
+        }
+
     }
 
     private void LastSegmentGoToPlayerPos() => rope.SetPosition(rope.positionCount - 1, playerTip.position);

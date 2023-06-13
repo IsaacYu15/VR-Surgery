@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SoftBody : MonoBehaviour
 {
+    public bool lockInPosition;
+    Vector3 intialPos;
+
     public float intensityForce = 1f;
     public float mass = 1f;
     public float stiffness = 1f;
@@ -16,6 +19,8 @@ public class SoftBody : MonoBehaviour
 
     void Start()
     {
+        intialPos = transform.position;
+
         OriginalMesh = GetComponent<MeshFilter>().sharedMesh;
         MeshClone = Instantiate(OriginalMesh);
         GetComponent<MeshFilter>().sharedMesh = MeshClone;
@@ -32,17 +37,27 @@ public class SoftBody : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        vertexArrays = OriginalMesh.vertices;
-
-        for (int i = 0;i < vertex.Length; i ++)
+        if (transform.position != intialPos && lockInPosition)
         {
-            Vector3 target = transform.TransformPoint(vertexArrays[vertex[i].ID]);
-            float intensity = (1 - (renderer.bounds.max.y - target.y) / renderer.bounds.size.y) * intensityForce;
-            vertex[i].Shake(target, mass, stiffness, damping);
-            target = transform.InverseTransformPoint(vertex[i].position);
-            vertexArrays[vertex[i].ID] = Vector3.Lerp(vertexArrays[vertex[i].ID], target, intensity);
+            gameObject.GetComponent<Rigidbody>().useGravity = false;
+            gameObject.GetComponent<Rigidbody>().position =  intialPos;
+        } else
+        {
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+
+            vertexArrays = OriginalMesh.vertices;
+
+            for (int i = 0; i < vertex.Length; i++)
+            {
+                Vector3 target = transform.TransformPoint(vertexArrays[vertex[i].ID]);
+                float intensity = (1 - (renderer.bounds.max.y - target.y) / renderer.bounds.size.y) * intensityForce;
+                vertex[i].Shake(target, mass, stiffness, damping);
+                target = transform.InverseTransformPoint(vertex[i].position);
+                vertexArrays[vertex[i].ID] = Vector3.Lerp(vertexArrays[vertex[i].ID], target, intensity);
+            }
+            MeshClone.vertices = vertexArrays;
         }
-        MeshClone.vertices = vertexArrays;
+
     }
 
     public class JellyVertex

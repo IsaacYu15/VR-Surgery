@@ -20,11 +20,11 @@ public class RopeGeneration : MonoBehaviour
 
         ropePoints = new GameObject[numberPoints];
 
-        Vector3 currPos = transform.position;
+        Vector3 currPos = ropeSpawnLocation.position;
 
         for (int i = 0; i < numberPoints; i ++)
         {
-            currPos += new Vector3(0, pointSpacing, 0);
+            currPos += new Vector3(0, -pointSpacing, 0);
 
             GameObject go = Instantiate(ropePointPref, currPos, Quaternion.identity);
             go.transform.parent = transform;
@@ -33,13 +33,13 @@ public class RopeGeneration : MonoBehaviour
         }
 
         ropePoints[0].GetComponent<ConfigurableJoint>().connectedBody = ropePoints[1].GetComponent<Rigidbody>();
-        transform.position = ropeSpawnLocation.position;
+        ropePoints[0].transform.position = ropeSpawnLocation.position;
         ropePoints[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         
 
         for (int i = 1; i < numberPoints; i ++)
         {
-            ropePoints[i].GetComponent<ConfigurableJoint>().connectedBody = ropePoints[i - 1].GetComponent<Rigidbody>();
+           ropePoints[i].GetComponent<ConfigurableJoint>().connectedBody = ropePoints[i - 1].GetComponent<Rigidbody>();
         }
 
         lineRenderer.positionCount = numberPoints;
@@ -49,13 +49,30 @@ public class RopeGeneration : MonoBehaviour
     // Update is called once per frame
 
 
+    float offset;
+
     void Update()
     {
+
+        ropePoints[0].transform.position = ropeSpawnLocation.position;
+
+        offset = Vector3.Distance(ropePoints[0].transform.position, ropePoints[1].transform.position);
+
         for (int i = 0; i < ropePoints.Length; i ++)
         {
             lineRenderer.SetPosition(i, ropePoints[i].transform.position);
+            
         }
 
+    }
 
+    public void LateUpdate()
+    {
+        for (int i = 1; i < ropePoints.Length; i ++)
+        {
+            ropePoints[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+            ropePoints[i].GetComponent<Rigidbody>().transform.localPosition -= (ropePoints[i].GetComponent<Rigidbody>().transform.localPosition - ropePoints[i - 1].GetComponent<Rigidbody>().transform.localPosition).normalized * (offset - pointSpacing);
+        }
     }
 }

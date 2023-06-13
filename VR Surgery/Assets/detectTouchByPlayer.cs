@@ -19,7 +19,6 @@ public class detectTouchByPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.name);
 
         if (collision.gameObject.transform.root.gameObject.name == "OVRPlayerController")
         {

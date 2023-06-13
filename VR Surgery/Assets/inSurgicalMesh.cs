@@ -7,8 +7,9 @@ public class inSurgicalMesh : MonoBehaviour
     public LayerMask surgicalMesh;
     public bool inMesh;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
+
         if (other.gameObject.layer == Mathf.Log(surgicalMesh.value, 2))
         {
             inMesh = true;

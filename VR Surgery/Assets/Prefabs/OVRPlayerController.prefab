@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 8192253995528906226}
   - component: {fileID: 8192253996300409594}
   - component: {fileID: 8192253996300409595}
-  - component: {fileID: 4150591728002447341}
+  - component: {fileID: 6367395034973412214}
   m_Layer: 0
   m_Name: LeftHandAnchor
   m_TagString: Untagged
@@ -974,7 +974,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0.12, y: 0, z: 0.7}
---- !u!114 &4150591728002447341
+--- !u!114 &6367395034973412214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -990,9 +990,9 @@ MonoBehaviour:
   slicer: {fileID: 823121322235045345}
   grabBegin: 0.55
   grabEnd: 0.35
-  m_parentHeldObject: 0
+  m_parentHeldObject: 1
   m_moveHandPosition: 0
-  m_gripTransform: {fileID: 0}
+  m_gripTransform: {fileID: 8196088204707879188}
   m_grabVolumes:
   - {fileID: 8192253996300409595}
   m_controller: 1

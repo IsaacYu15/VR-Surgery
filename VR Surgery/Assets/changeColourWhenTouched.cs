@@ -6,6 +6,7 @@ public class changeColourWhenTouched : MonoBehaviour
 {
     public Color touched;
     public Color normal;
+    public bool passedThrough;
 
     public void Start()
     {
@@ -17,16 +18,9 @@ public class changeColourWhenTouched : MonoBehaviour
         if (collision.gameObject.name == "Suture")
         {
             gameObject.GetComponent<MeshRenderer>().material.color = touched;
+            passedThrough = true;
         }
 
     }
 
-    private void OnTriggerExit(Collider collision)
-    {
-        if (collision.gameObject.name == "Suture")
-        {
-            gameObject.GetComponent<MeshRenderer>().material.color = normal;
-        }
-
-    }
 }
