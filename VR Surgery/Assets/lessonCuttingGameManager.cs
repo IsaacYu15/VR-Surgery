@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//Author: Isaac 
+//Title: lessonCuttingGameManager
+
+//Description: 
+//This class manages / displays the score for the cutting lesson. It gets the accuracy in which the player
+//cuts and displays the score. The random cut pattern & player accuracy is generated and caculated by the object to be sliced
+//Detects if the game is over by seeing if the player cut the object into two pieces and placed them into the tray
+
+
 public class lessonCuttingGameManager : MonoBehaviour
 {
     public objectsContained trayContainer;

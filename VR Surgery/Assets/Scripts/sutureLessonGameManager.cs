@@ -4,6 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
+//Author: Isaac 
+//Title: sutureLessonGameManager
+
+//Description: 
+//This class displays the score the player earned (score is deducted if the user touches the sponge or if they suture at a velocity above max velocity (i.e not delicate enough)
+//it also determines when the game is over. When the rope touches all 4 surgical rings the program tracks the user hands velocity. 
+//When the player pulls their hand after the sponge has been moved (tracking the magnitude of their hand velocity), the sponges are pulled together. The game is over 
+//when the sponges are sutured together. 
+
+
 public class sutureLessonGameManager : MonoBehaviour
 {
     public TextMeshProUGUI maxNeedleVelocity;
@@ -57,6 +68,7 @@ public class sutureLessonGameManager : MonoBehaviour
 
         for (int i = 0; i < rope.ropePositions.Count; i ++)
         {
+            //create a collider at each point of the rope to see if it is touching surigcal ring
             Collider[] hitColliders = Physics.OverlapSphere(rope.ropePositions[i].position, 0.01f);
 
             foreach (Collider hitCollider in hitColliders)

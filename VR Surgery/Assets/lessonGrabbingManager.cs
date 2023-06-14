@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+//Author: Isaac 
+//Title: lessonGrabbingManager
+
+//Description: 
+//This class manages the score for the grabbing lesson. It sees if all the containers have a
+//box inside of them and deducts points if the user touches the box
+//Ends the game when all the boxes have been placed inside the container
+
 public class lessonGrabbingManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreCounter;
@@ -20,8 +28,6 @@ public class lessonGrabbingManager : MonoBehaviour
     public void Awake()
     {
         currScore = maxScore;
-        grabCubes = getChildren(grabCubeParent.transform);
-        grabContainers = getChildren(grabContainerParent.transform);
 
     }
 
@@ -38,7 +44,12 @@ public class lessonGrabbingManager : MonoBehaviour
 
         } else
         {
-            currScore -= Time.deltaTime * 0.25f;
+            currScore = maxScore;
+
+            for (int i = 0; i < grabContainers.Length; i ++)
+            {
+                currScore -= grabContainers[i].GetComponent<detectTouchByPlayer>().touchCounter;
+            }
 
             if (currScore < 0)
             {
@@ -76,18 +87,4 @@ public class lessonGrabbingManager : MonoBehaviour
     }
 
 
-    public GameObject [] getChildren (Transform parent)
-    {
-        GameObject [] children = new GameObject[parent.childCount];
-
-        int i = 0;
-
-        foreach (Transform child in parent)
-        {
-            children[i] = child.gameObject;
-            i++;
-        }
-
-        return children;
-    }
 }

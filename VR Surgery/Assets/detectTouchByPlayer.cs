@@ -5,7 +5,8 @@ using UnityEngine;
 public class detectTouchByPlayer : MonoBehaviour
 {
     public lessonGrabbingManager gameManager;
-    public GameObject[] cubes;
+    GameObject[] cubes;
+    public GameObject[] punishable;
 
     public float touchPunishment = 10f;
     public float touchCounter;
@@ -19,20 +20,27 @@ public class detectTouchByPlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
-        if (collision.gameObject.transform.root.gameObject.name == "OVRPlayerController")
+        foreach (GameObject go in punishable)
         {
-            touchCounter += touchPunishment;
+            if (collision.gameObject.name == go.name)
+            {
+                touchCounter += touchPunishment;
 
+            }
         }
+
 
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.transform.root.gameObject.name == "OVRPlayerController")
+        foreach (GameObject go in punishable)
         {
-            touchCounter += Time.deltaTime;
+
+             if (collision.gameObject.name == go.name)
+             {
+                 touchCounter += Time.deltaTime;
+             }
         }
 
 

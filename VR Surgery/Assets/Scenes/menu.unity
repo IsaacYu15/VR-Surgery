@@ -794,14 +794,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cut the fabric with the scissors along the red line. Place the two halves
-    in the tray with the grabber. Score is based on how well you can cut along the
-    red line
-
-
-    Left hand: scissors
-
-    Right handL grabber'
+  m_text: "Cut the fabric with the scissors (left hand) along the red line. Place
+    the two halves in the tray with the grabber. Score is based on how well you can
+    cut along the red line. The blue line is the line you cut. \n\nLeft hand: scissors\nRight
+    hand: grabber"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
   m_sharedMaterial: {fileID: 7032093815205813286, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
@@ -1024,14 +1020,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Place the cubes into the containers with the grabber. Score is based on
-    how fast you do this.
+  m_text: 'Place the cubes into the containers with the grabber (right hand). You
+    will lose points if you touch the containers.
 
 
-    Left hand: scissors (grab button to use)
+    Left hand: scissors (grab
+    button to use)
 
-    Right
-    hand: grabber (grab button to use)'
+    Right hand: grabber (grab button to use) '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
   m_sharedMaterial: {fileID: 7032093815205813286, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
@@ -1623,8 +1619,12 @@ PrefabInstance:
       value: 13.085989
       objectReference: {fileID: 0}
     - target: {fileID: 645775360731833364, guid: 78901b98a8801e542842593e0541ce91, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 645775360731833364, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -37
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 1365466605482219749, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_IsActive
@@ -1723,6 +1723,18 @@ PrefabInstance:
       value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.004043314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.004043314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.004043314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1732,7 +1744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.34
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1752,11 +1764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.69
+      value: -0.61174
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.74
+      value: 0.67839
       objectReference: {fileID: 0}
     - target: {fileID: 7610133114274646333, guid: 78901b98a8801e542842593e0541ce91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
