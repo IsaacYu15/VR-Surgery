@@ -794,10 +794,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cut the fabric with the scissors (left hand) along the red line. Place
+  m_text: 'Cut the fabric with the scissors (left hand) along the red line. Drop
     the two halves in the tray with the grabber. Score is based on how well you can
-    cut along the red line. The blue line is the line you cut. \n\nLeft hand: scissors\nRight
-    hand: grabber"
+    cut along the red line. The white line is the line you actually cut.
+
+
+    Left
+    hand: scissors
+
+    Right hand: grabber'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}
   m_sharedMaterial: {fileID: 7032093815205813286, guid: fc41d5815b9a5bb48be4c84a746c4ff6, type: 2}

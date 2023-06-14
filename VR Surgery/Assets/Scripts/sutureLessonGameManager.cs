@@ -69,7 +69,7 @@ public class sutureLessonGameManager : MonoBehaviour
         for (int i = 0; i < rope.ropePositions.Count; i ++)
         {
             //create a collider at each point of the rope to see if it is touching surigcal ring
-            Collider[] hitColliders = Physics.OverlapSphere(rope.ropePositions[i].position, 0.01f);
+            Collider[] hitColliders = Physics.OverlapSphere(rope.ropePositions[i].position, 0.05f);
 
             foreach (Collider hitCollider in hitColliders)
             {

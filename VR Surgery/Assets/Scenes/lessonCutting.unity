@@ -824,7 +824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 1584594803}
   patternMat: {fileID: 2100000, guid: 27aaa0e2d7d765f40b48741f01d17653, type: 2}
-  playerMat: {fileID: 2100000, guid: a86f23e51babc544a8f3e240ffe9b263, type: 2}
+  playerMat: {fileID: 2100000, guid: 89681c510a2d4144f82986df469f44a1, type: 2}
   numberChangesInDirection: 2
   pointsToCut: []
   inaccuracyDistance: 0
@@ -1572,7 +1572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6132105843570345808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.602, y: 0.726, z: -2.35}
+  m_LocalPosition: {x: -0.649, y: 0.67, z: -2.35}
   m_LocalScale: {x: 7.765107, y: 3.2539, z: 3.2539}
   m_ConstrainProportionsScale: 0
   m_Children:
