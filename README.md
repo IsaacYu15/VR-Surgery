@@ -2,7 +2,7 @@
 Surger robots are fascinating but as they are so expensive, the technology remains limited to a handful of people. "Surgery Robot Simulator" aims to replicate the experience of using a surgery robot (modeled based off the DaVinci System). The program's goal is to ultimately expose the user to basic controls of surgery robots such as grabbing, cutting, and suturing. A point system is in place to help the user perform a certain task, like placing a box in a container without touching the box better.
 The purpose of this program is to not only make the experience of using surgery robots more accessible but also to train surgeons, see if surgical robots are worth investing in, share the experience of using advanced medical technology with the world, and could be used in to teach highschool students as well. 
 
-Video demo: [TO COME]
+Video demo [here] (https://www.youtube.com/watch?v=iJSWnNqPqfo)
 
 ## BUILT USING
   [Unity](https://unity.com/download) - A game engine designed for real-time 3D & 2D projects
