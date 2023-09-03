@@ -5,13 +5,13 @@ The purpose of this program is to not only make the experience of using surgery 
 Video demo [here](https://www.youtube.com/watch?v=iJSWnNqPqfo)
 
 ## BUILT USING
-  [Unity](https://unity.com/download) - A game engine designed for real-time 3D & 2D projects
-  [Maya](https://www.autodesk.ca/en/products/maya/overview) - 3D modeling software
-  [Oculus Integration Package] (https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) - To use Oculus in Unity 
+- [Unity](https://unity.com/download) - A game engine designed for real-time 3D & 2D projects
+- [Maya](https://www.autodesk.ca/en/products/maya/overview) - 3D modeling software
+- [Oculus Integration Package] (https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) - To use Oculus in Unity 
 
 ## PREREQUISITES
-  [Unity](https://unity.com/download) Version 2021.3.11f1. 
-  [C# in VsCode](https://code.visualstudio.com/docs/languages/csharp)
+- [Unity](https://unity.com/download) Version 2021.3.11f1. 
+- [C# in VsCode](https://code.visualstudio.com/docs/languages/csharp)
   
 ## TRY IT YOURSELF!
   1. Download the project as a ZipFile
