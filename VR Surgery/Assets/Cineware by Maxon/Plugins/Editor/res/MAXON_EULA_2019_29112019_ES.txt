@@ -1,0 +1,139 @@
+﻿
+
+Este Acuerdo de licencia de usuario final se distribuye con un producto de software Maxon ("Software") y / o se muestra durante la instalación. Al instalar, reproducir o utilizar el software, el usuario firma este acuerdo de licencia con Maxon Computer GmbH, Max-Planck-Straße 20, 61381 Friedrichsdorf, Alemania ("Maxon"). Este acuerdo de licencia rige el uso por parte del usuario del software Maxon, los medios asociados y los servicios basados en Internet. El uso del software sin la conclusión de este acuerdo de licencia es una infracción de los derechos de autor.
+
+
+ 	§ 1	Objetivo del Acuerdo	
+
+1.1	Maxon suministra el software al usuario al hacer que el software esté disponible para descargar en Internet. El usuario puede instalar y utilizar el software en un ordenador. El software no necesita acceder a un sitio web o servicio en la nube cuando se utiliza en el ordenador. El software se ejecuta en la máquina local y no es un servicio basado en la nube o en la web.
+
+1.2	Maxon licencia el software con diferentes modelos de licencia. Cuando se proporciona el software, se determina el modelo de licencia aplicable, el plazo y el precio de la tarifa de la licencia. Este acuerdo de licencia regula los derechos de uso que el usuario adquiere con el modelo de licencia respectivo y los derechos y obligaciones generales que tiene el usuario.
+
+1.3	Para utilizar el software, el usuario debe registrarse con Maxon y, de vez en cuando, conectarse a Internet para verificar la licencia del software.
+
+
+ 	§ 2	Licencia Perpetua	
+
+2.1	Una licencia perpetua otorga al usuario un derecho ilimitado, remunerable, no exclusivo, intransferible y no sublicenciable para instalar y usar el software. Además, el Usuario no puede usar el software en diferentes dispositivos al mismo tiempo y no puede permitir que un tercero use el software.
+
+2.2	El pago único de la licencia se debe hacer cuando se entrega el software. La concesión del derecho de uso está sujeta a la condición de que el usuario pague la tarifa de la licencia.
+
+2.3	El usuario solo puede utilizar la versión con licencia del software, En caso de que la licencia haya sido transferida desde otra versión con licencia previa, el Usuario puede usar cada versión pero no simultáneamente.
+
+
+ 	§ 3	Licencia por Subscripción	
+
+3.1	Con una licencia de suscripción, el usuario recibe el derecho de tiempo limitado, remunerado, no exclusivo, intransferible y no sublicenciable para instalar y usar el software. Además, el usuario no puede usar el software simultáneamente en diferentes dispositivos y es posible que no permita que un tercero use el software.
+
+3.2	Cuando se transfiere el software, se determina el plazo del derecho de uso. Al final del término, el derecho de uso se extenderá por el mismo término si el contrato de licencia no se termina por escrito por ninguna de las partes 14 días antes del final del término. Durante el plazo, se excluye la rescisión ordinaria del acuerdo de licencia.
+
+3.3	Las partes pueden acordar una extensión del término durante el término del derecho de uso.
+
+3.4	El importe de la cuota de licencia depende del plazo del derecho de uso. El pago de la licencia se debe realizar en la primera transferencia del software y en cada extensión del plazo. La concesión del derecho de uso está sujeta a la condición de que el usuario pague los derechos de licencia debidos.
+
+3.5	El usuario puede usar cualquier versión disponible para el suscriptor pero no simultáneamente. Maxon se reserva el derecho de retirar versiones que tengan más de 3 años.
+
+
+ 	§ 4	Licencia Flotante	
+
+4.1	Con una licencia flotante, el usuario recibe el derecho de remuneración, no exclusivo y no sujeto a licencia para instalar el software en cualquier número de computadoras y usarlo simultáneamente en el número de computadoras con licencia. Un servidor de licencias debe supervisar el uso y garantizar que no se exceda el número de licencias de usos concurrentes. El número de instalaciones que se pueden usar simultáneamente se determina cuando se proporciona el software.
+
+4.2	La licencia flotante puede ser una licencia perpetua o una licencia de suscripción según los términos y condiciones aplicables.
+
+ 	§ 5	Licencia Granja de Render	
+
+5.1	Con una licencia de Granja de Render, el usuario recibe el derecho pagado, no exclusivo, no transferible y sin licencia para instalar y utilizar los clientes de render contenidos en el software en las computadoras de la granja de render del usuario.
+
+5.2	El usuario puede instalar y usar Team Render Client en hasta 5 computadoras en la comunidad de render del usuario al mismo tiempo. Este derecho de uso tiene un contenido limitado: el usuario solo puede usar el Team Render Client para renderizar gráficos y animaciones de computadora en 3D que el usuario haya creado o para terceros. El usuario no puede usar Team Render Client (1) fuera de la comunidad de renderización o la intranet, (2) para procesar datos de terceros, renderizar gráficos y animaciones 3D de terceros u otros servicios de renderización para terceros, o (3) en Prestamos granjas, redes o servicios en la nube de un tercero.
+
+5.3	El usuario puede usar Command Line Render Client en el número de computadoras con licencia en la comunidad de render del usuario. Este derecho de uso tiene un contenido limitado: el usuario no puede usar el Command Line Render Client fuera de la comunidad de render del usuario o en redes o servicios en la nube de un tercero. El usuario puede usar el Command Line Render Client para renderizar gráficos de computadora en 3D y
+-El usuario también tiene permitido renderizar animaciones que haya creado o para terceros, procesar datos de terceros, renderizar gráficos en 3D y animaciones de terceros u otros servicios de renderización. Para usar el Command Line Render Client en la comunidad de render, se requiere un software de control de terceros, que no es parte del software. Un servidor de licencias debe supervisar el uso y garantizar que no se exceda la cantidad de usos concurrentes con licencia.
+
+5.4	La licencia de Render Farm puede ser una licencia perpetua o una licencia de suscripción según los términos y condiciones aplicables.
+
+ 	§ 6	Licencias para Fines Educativos	
+
+6.1	Una licencia educativa otorga al usuario una libre de derechos, no exclusiva, no transferible, no sujeta a licencia de instalación y uso del Software en un ordenador. Este derecho de uso tiene un contenido limitado: el usuario debe ser un maestro, capacitador, estudiante o alumno de una escuela, colegio técnico, universidad reconocida por el estado o el estado, en un centro de capacitación aprobado por Maxon, caso por caso o en una empresa de formación comercial. El usuario puede utilizar el software exclusivamente para fines de enseñanza y aprendizaje y no directa o indirectamente para fines comerciales o de negocios (sujeto a 6.5). La licencia para fines educativos es personalizada y no da derecho a escuelas, colegios técnicos, universidades o empresas de formación comercial a utilizarla. Las funciones y el uso del software pueden estar restringidos. 
+
+6.2	La concesión del derecho de uso está sujeta a la condición de que el usuario demuestre a Maxon que pertenece al grupo de personas mencionado anteriormente.
+
+6.3	La licencia para fines educativos está limitada en el tiempo. El derecho de uso finaliza tan pronto como el usuario ya no pertenece al grupo de personas enumeradas anteriormente, y el usuario está obligado a informar a Maxon de esto inmediatamente.
+
+6.4	Maxon puede ofrecer licencias perpetuas o de suscripción a escuelas, escuelas técnicas, universidades y empresas de capacitación comercial, así como a instalaciones de capacitación aprobadas por Maxon en casos individuales, con términos de licencia más favorables, que dan derecho al usuario a instalar y utilizar el software. en un cierto número de ordenadores exclusivamente para fines de enseñanza. Los términos y condiciones de la licencia y el número de ordenadores en las que se puede instalar y usar el software se determinarán cuando se conceda el software
+
+6.5	Maxon y el usuario pueden acordar por separado y de manera diferente que el usuario puede usar el software con fines educativos, no solo con fines de enseñanza, sino también directa o indirectamente con fines comerciales y de negocios.
+
+
+ 	§ 7	Licencia de Prueba	
+
+7.1	Con una licencia de prueba, el usuario recibe el derecho de tiempo limitado, gratuito, no exclusivo, no transferible y sin licencia para instalar y utilizar el software en un ordenador. Este derecho de uso tiene un contenido limitado: el usuario no puede utilizar el software directa o indirectamente con fines de negocio o comerciales o con fines de capacitación. Las funciones y el uso del Software pueden estar restringidos. Cada usuario puede usar una única licencia de prueba por versión principal.
+
+7.2	La licencia de prueba se puede convertir en una licencia perpetua o en una licencia de suscripción de acuerdo con los términos y condiciones vigentes de vez en cuando.
+
+
+ 	§ 8	Términos Generales y Condiciones	
+
+8.1	El registro del software y el derecho de uso están vinculados al usuario y no pueden ser transferidos o sublicenciados a terceros sin el consentimiento de Maxon. Maxon, el usuario y el tercero deben documentar una transferencia del derecho de uso.
+
+8.2	El usuario solo puede usar el software en varios ordenadores al mismo tiempo si el modelo de licencia aplicable lo permite expresamente o si Maxon le permite expresamente usar el software para otros fines.
+
+8.3	Además de los derechos de uso mencionados anteriormente, el usuario solo tiene derecho a reproducir, volver a trabajar, descompilar, distribuir y reproducir el software si esto está expresamente permitido por la ley. Otros usos y explotaciones del software no están permitidos para el usuario. En particular, el usuario no puede transferir, sub-licenciarse, hacer accesible al público, alquilar o permitir que terceros utilicen el software.
+
+8.4	El derecho de uso del usuario finaliza con el término del término del acuerdo de licencia en el caso de modelos de licencia temporales y con todos los modelos de licencia tan pronto como Maxon o el usuario rescindan este acuerdo de licencia por una buena causa. El usuario debe dejar de utilizar el software de forma inmediata y completa y eliminar o destruir todas las copias. Los derechos de licencia ya pagados no serán reembolsados.
+
+
+	§ 9	Actualizaciones y Upgrades 	
+
+9.1	Maxon puede, a su entera discreción, desarrollar y proporcionar al usuario actualizaciones del software con el fin de remediar defectos y con funciones mejoradas, así como actualizaciones con funciones extendidas. Para actualizaciones, por ejemplo, la designación de la versión se adapta de R21.0.1 a R21.0.2, para actualizaciones de R21.1 a R21.2 o R21 a R22.
+
+9.2	El derecho a utilizar las actualizaciones se basa en el modelo de licencia y el derecho del usuario a usar el software. El usuario solo tiene derecho a usar una actualización si tiene el derecho de usar el software. Una actualización no le otorga al usuario ningún derecho de uso adicional o extendido al software con licencia. 
+
+9.3	Si Maxon proporciona al usuario una actualización para garantizar el uso contractual del software o para eliminar un defecto, el usuario debe instalar la actualización para continuar usando el software de acuerdo con el contrato. Maxon no es responsable de los defectos y daños causados por el usuario que no instaló la actualización. El usuario solo tiene un reclamo contra Maxon por la provisión de actualizaciones y actualizaciones si las partes lo aceptan por escrito. 
+
+
+ 	§ 10	Violación de los Derechos de Autor	
+
+10.1	Si el usuario viola este acuerdo de licencia, utiliza el software sin los derechos de uso requeridos o viola los derechos de propiedad intelectual de Maxon, el derecho de uso otorgado en este acuerdo de licencia quedará sin efecto inmediatamente y Maxon podrá rescindir este acuerdo de licencia sin previo aviso. El usuario debe dejar de utilizar el software de forma inmediata y completa y eliminar o destruir todas las copias. Otros derechos, reclamaciones y medidas contra el usuario de Maxons quedan reservados.
+
+10.2	El software contiene funciones técnicas de protección contra el uso no autorizado y para la administración de derechos. Las funciones de protección impiden que el usuario utilice el software de una manera, con un propósito o en una medida que no se corresponda con el modelo de licencia respectivo y viole este acuerdo de licencia. Las funciones de protección recopilan datos sobre el registro del software, el sistema y la red en la que se instala y utiliza el software, así como sobre el tiempo y el número de usos. Estos datos se transmiten a Maxon a través de una interfaz de comunicación del Software a través de conexiones de red e Internet. Maxon procesa los datos para cumplir con este acuerdo de licencia y para proteger el software del uso no autorizado. El usuario no puede eliminar o eludir las funciones de protección y no puede utilizar el software sin las funciones de protección. Desactivar la función "Enviar información a Maxon" en el software no desactiva las funciones de protección.
+
+
+ 	§ 11	Garantías 	
+
+11.1	Maxon proporciona el software al usuario libre de defectos de calidad y título.
+
+11.2	Maxon no está obligado a remediar los defectos de calidad o título causados por (1) el uso del software en contra de las disposiciones de este Acuerdo de licencia, (2) el uso del software en sistemas o junto con hardware y software que no sean adecuados para este propósito y no han sido liberados por Maxon, o (3) el uso del software por parte del usuario, a menos que el usuario pueda probar que el defecto no fue causado por el mismo.
+
+11.3	Si el usuario es responsable por un tercero porque el uso contractual del software infringe los derechos de propiedad del tercero, el usuario está obligado a informar a Maxon de inmediato, asignar la defensa contra Maxon a estas reclamaciones y apoyar financieramente a Maxon de manera adecuada sus gastos.
+
+11.4	Las reclamaciones del usuario por defectos materiales y títulos expirarán después de 24 meses si el usuario es un consumidor, de lo contrario, después de 12 meses. 
+
+ 	§ 12	Limitación de Responsabilidad	
+
+12.1	Maxon es responsable, sin limitaciones, por intenciones y negligencia grave, por lesiones a la vida, extremidades o salud, de conformidad con las disposiciones de la Ley de Responsabilidad del Producto o en el caso de una garantía asumida. 
+
+12.2	La responsabilidad de Maxon por violaciones levemente negligentes de las obligaciones fundamentales se limita a daños directos, que son típicos de este acuerdo de licencia y eran previsibles en la ejecución del contrato. Las obligaciones principales son obligaciones por parte de Maxon que permiten el cumplimiento de este acuerdo de licencia, es decir, que son requisitos previos para la ejecución de este acuerdo y en las que el usuario debe poder confiar. En caso de negligencia leve, Maxon no se hace responsable por la pérdida de beneficios por parte del usuario.
+
+12.3	De lo contrario, se excluye la responsabilidad de Maxon.
+
+12.4	Esta limitación de responsabilidad también se aplica a la responsabilidad personal de los empleados, representantes y órganos de Maxon.
+
+
+ 	§ 13	Protección de Datos	
+
+13.1	Maxon cumple con las disposiciones legales aplicables al procesar datos personales. La información sobre protección de datos y la declaración de protección de datos de Maxon están disponibles en Internet en: https://www.maxon.net/privacy_policy_en
+
+13.2	Si el software tiene la función "Enviar información a Maxon", el usuario puede activar y desactivar esta función mientras usa el software. La activación de esta función hace que el software envíe automáticamente información de software y hardware a Maxon de vez en cuando a través de la conexión de red existente. Esta información incluye, pero no se limita a, la versión, el área y la configuración de idioma del software, la información del sistema sobre el hardware y los datos sobre el uso, la configuración y los problemas encontrados con el software. El contenido y los archivos creados y procesados ​​por el usuario, así como los datos personales (nombre o dirección) no se envían a Maxon con esta función. Maxon procesa y utiliza la información enviada con fines estadísticos y para mejorar sus productos y servicios, y solo la pasará a terceros o la usará para otros fines con el consentimiento del usuario. Maxon no vincula la información enviada a los datos personales y no la utiliza para identificar al usuario o crear perfiles de usuario.
+
+
+	§ 14	Términos Generales	
+
+14.1	Los cambios en el rendimiento, así como los acuerdos de garantía, las modificaciones y los complementos de este acuerdo de licencia deben realizarse por escrito y deben identificarse como tales.
+
+14.2	Si este acuerdo de licencia está escrito en varios idiomas, solo la versión en alemán es vinculante y las otras versiones solo tienen fines informativos.
+
+14.3	Si alguna disposición de este Acuerdo de licencia se considera inválida, inejecutable o incompleta, el resto de este Acuerdo de licencia continuará en plena vigencia. La disposición inválida o inaplicable o el llenado del vacío se reemplazará por las disposiciones legales.
+
+14.4	Si el usuario es una empresa, una entidad legal de derecho público o un tenedor de activos especiales de derecho público, Fráncfort del Meno será el lugar exclusivo de jurisdicción. La ley de la República Federal de Alemania se aplicará a la exclusión de la Convención de las Naciones Unidas sobre Contratos para la Venta Internacional de Bienes.
+
+State: Noviembre 2019

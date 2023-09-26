@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LESSON 3: STITCHING'
+  m_text: 'LESSON 3: SUTURING'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7bad964a4d2568b4da8f53fc4bed8fc2, type: 2}
   m_sharedMaterial: {fileID: 6873310639161516942, guid: 7bad964a4d2568b4da8f53fc4bed8fc2, type: 2}
@@ -738,7 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pass the suture through the hoops in the sponge. Then, pull suture to
+  m_text: "Pass the needle through the hoops in the sponge. Then, pull needle to
     pull sponges  together. You will lose points if you suture too fast (needle velocity
     exceeds \"Velocity to Stay Under\") or if you touch the sponge. \n\nLeft hand:
     grabber\nRight hand: grabber"

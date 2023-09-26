@@ -1,0 +1,144 @@
+﻿
+
+This End User License Agreement is distributed with a Maxon software product ("Software") and/or displayed during installation. By installing, reproducing or otherwise using the software, the user enters into this license agreement with Maxon Computer GmbH, Max-Planck-Straße 20, 61381 Friedrichsdorf, Germany ("Maxon"). This license agreement governs the user's use of the Maxon software, associated media and Internet-based services. The use of the software without the conclusion of this license agreement is an infringement of copyright.
+
+
+
+ 	§ 1	Object of Agreement	
+
+1.1	Maxon supplies the software to the user by making the software available for download on the Internet. The user can install and use the software on a computer. The software runs on the local machine and is not a cloud- or web-based service.
+
+1.2	Maxon licenses the software with different license models. When the software is provided, the applicable license model, the term and the amount of the license fee are determined. This license agreement regulates which rights of use the user acquires with the respective license model and which general rights and obligations the user has.
+
+1.3	In order to use the software, the user must register with Maxon and from time to time connect to the Internet in order to verify the licensing of the software. 
+
+
+ 	§ 2	Perpetual License	
+
+2.1	A perpetual license grants the user a time unlimited, remunerable, non-exclusive, non-transferable and non-sublicensable right to install and use the software. In addition, the User may not use the software on different devices concurrently and may not allow a third party to use the software.
+
+2.2	The one-time license fee is due when the software is handed over. The granting of the right of use is subject to the condition that the user pays the license fee. 
+
+2.3	The user may only use the licensed version of the software; In case the license has been transferred from another previously licensed version the User may use each version but not simultaneously. 
+
+
+
+ 	§ 3	Subscription License	
+
+3.1	With a subscription license, the user receives the time-limited, remunerated, non-exclusive, non-transferable and non-sub-licensable right to install and use the software. In addition, the User may not use the software simultaneously on different devices and may not allow a third party to use the software.
+
+3.2	When the software is transferred, the term of the right of use is determined. At the end of the term, the right of use shall be extended by the same term if the license agreement is not terminated in writing by either party 14 days prior to the end of the term. During the term, ordinary termination of the license agreement is excluded.
+
+3.3	The parties may agree on an extension of the term during the term of the right of use. 
+
+3.4	The amount of the license fee depends on the term of the right of use. The license fee is due at the first transfer of the software and at each extension of the term. The granting of the right of use is subject to the condition that the user pays the license fees due.
+
+3.5	The user may use any version available to the subscriber but not concurrently. Maxon reserves the right to retire versions that are older than 3 years. 
+
+
+ 	§ 4	Floating License	
+
+4.1	With a floating license, the user receives the remunerable, non-exclusive and non-sub-licensable right to install the software on any number of computers and to use it simultaneously on the licensed number of computers. A license server must monitor the use and ensure that the licensed number of concurrent uses is not exceeded. The number of installations that may be used simultaneously is determined when the software is provided.
+
+4.2	The floating license can be a perpetual license or a subscription license under the applicable terms and conditions. 
+
+
+ 	§ 5	Render Farm License	
+
+5.1	With a Render Farm license, the user receives the paid, non-exclusive, non-transferable and non-sub-licensable right to install and use the render clients contained in the software on computers in the user’s render farm. 
+
+5.2	The user may install and use the Team Render Client on up to 5 computers in the user’s render farm at the same time. This right of use is limited in content: The user may only use the Team Render Client to render 3D computer graphics and animations the user has created or for third parties. The user may not use the Team Render Client (1) outside the user’s render farm or intranet, (2) for processing third party data, rendering third party 3D graphics and animations, or other rendering services for third parties, or (3) in render farms, networks or cloud services of a third party
+
+5.3	The user may use the Command Line Render Client on the licensed number of computers in the user’s render farm. This right of use is limited in content: The user may not use the Command Line Render Client outside the user’s render farm or in networks or cloud services of a third party. The user may use the Command Line Render Client to render 3D computer graphics and the user is also permitted to render animations that the user has created or for third parties, to process the data of third parties, for rendering 3D graphics and animations of third parties or for other rendering services. To use the Command Line Render Client in the render farm, a third-party control software is required, which is not part of the software. A license server must monitor usage and ensure that the licensed number of concurrent uses is not exceeded. 
+
+5.4	The Render Farm license may be a perpetual license or a subscription license under the applicable terms and conditions.
+
+
+ 	§ 6	Licenses for Educational Purposes	
+
+6.1	An educational license grants the user a royalty-free, non-exclusive, non-transferable, non-sub-licensable right to install and use the Software on a computer. This right of use is limited in content: The user must be a teacher, trainer, student or pupil at a state or state-recognized school, technical college, university, at a training facility approved by Maxon on a case-by-case basis or at a commercial training company. The user may use the software exclusively for teaching and learning purposes and not directly or indirectly for business or commercial purposes (subject to 6.5). The license for educational purposes is personalized and does not entitle schools, technical colleges, universities or commercial training companies to use it. The functions and use of the software may be restricted. 
+
+6.2	The granting of the right of use is subject to the condition that the user proves to Maxon that he belongs to the aforementioned group of persons. 
+
+6.3	The license for educational purposes is limited in time. The right of use ends as soon as the user no longer belongs to the group of persons listed above, and the user is obliged to inform Maxon of this immediately.
+
+6.4	Maxon may offer perpetual or subscription licenses to schools, technical colleges, universities and commercial training companies, as well as to training facilities approved by Maxon on request in individual cases, at more favorable license terms, which entitle the user to install and use the software on a certain number of computers exclusively for teaching purposes. The terms and conditions of the license and the number of computers on which the software may be installed and used shall be determined when the software is granted
+
+6.5	Maxon and the user may agree separately and differently that the user may use the software for educational purposes not only for teaching purposes, but also directly or indirectly for business and commercial purposes.
+
+
+ 	§ 7	Trial License	
+
+7.1	With a trial license, the user receives the time-limited, free, non-exclusive, non-transferable and non-sub-licensable right to install and use the software on a computer. This right of use is limited in content: The user may not use the software directly or indirectly for business or commercial purposes or for training purposes. The functions and use of the Software may be restricted. Each user can use a single trial license per major release.
+
+7.2	The trial license may be converted into a perpetual license or subscription license under the terms and conditions in effect.
+
+
+ 	§ 8	General Terms and Conditions	
+
+8.1	The registration of the software and the right of use are bound to the user and cannot be transferred or sublicensed to third parties without Maxon's consent. A transfer of the right of use must be documented by Maxon, the user and the third party.
+
+8.2	The user may only use the software on several computers at the same time if the applicable license model expressly permits this or if Maxon expressly permits him to use the software for other purposes.
+
+8.3	In addition to the above-mentioned rights of use, the user is only entitled to copy, rework, decompile, distribute and reproduce the software if this is expressly permitted by law.  Other uses and exploitations of the software are not permitted to the user.  In particular, the user may not transfer, sub-license, make publicly accessible, rent or otherwise enable third parties to use the software. 
+
+8.4	The user's right of use ends with the end of the term of the license agreement in the case of temporary license models and with all license models as soon as Maxon or the user terminates this license agreement for good cause. The user must then cease all use of the software immediately and completely and delete or destroy all copies. Already paid license fees will not be refunded.
+
+
+	§ 9	Updates and Upgrades 	
+
+9.1	Maxon may, at its sole discretion, develop and provide to the user updates of the software for the purpose of remedying defects and with improved functions as well as upgrades with extended functions. For updates, for example, the version designation is adapted from R21.0.1 to R21.0.2, for upgrades from R21.1 to R21.2 or R21 to R22.
+
+9.2	The right to use the updates and upgrades is based on the license model and the user's right to use the software. The user is only entitled to use an update and upgrade if the user has the right to use the software. An update or upgrade does not give the user any additional or extended rights of use to the licensed software. 
+
+9.3	If Maxon provides the user with an update to ensure the contractual use of the software or to remove a defect, the user must install the update to continue to use the software in accordance with the contract. Maxon is not responsible for defects and damages caused by the user not installing the update. The user only has a claim against Maxon for the provision of updates and upgrades if the parties agree to this in writing. 
+
+
+ 	§ 10	Breach of Copyright	
+
+10.1	If the user violates this license agreement, uses the software without the required rights of use or otherwise violates Maxon's intellectual property rights, the right of use granted in this license agreement shall immediately become invalid and Maxon may terminate this license agreement without notice. The user must then cease all use of the software immediately and completely and delete or destroy all copies. Maxon’s other rights, claims and measures against the user remain reserved.
+
+10.2	The software contains technical protective functions against unauthorized use and for the administration of rights. The protective functions prevent the user from using the software in a way, for a purpose or to an extent that does not correspond to the respective license model and violates this license agreement. The protective functions collect data about the registration of the software, the system and the network in which the software is installed and used, as well as about the time and number of uses. This data is transmitted to Maxon via a communication interface of the Software via network connections and the Internet. Maxon processes the data to fulfill this license agreement and to protect the software from unauthorized use. The user may not remove or circumvent the protective functions and may not use the software without the protective functions. Deactivating the "Send information to Maxon" function in the software does not deactivate the protection functions. 
+
+
+ 	§ 11	Warrantees 	
+
+11.1	Maxon provides the software to the user free from defects of quality and title.
+
+11.2	Maxon is not obliged to remedy defects of quality or title caused by (1) the use of the software contrary to the provisions of this License Agreement, (2) the use of the software in systems or together with hardware and software that are unsuitable for this purpose and have not been released by Maxon, or (3) the use of the software by the user unless the user can prove that the defect was not caused thereby.
+
+11.3	If the user is held liable by a third party because the contractual use of the software infringes the property rights of the third party, the user is obliged to inform Maxon immediately, assign the defense against these claims to Maxon and to financially support Maxon appropriately with their expense.
+
+11.4	The user's claims for material defects and defects of title shall expire after 24 months if the user is a consumer, otherwise after 12 months. 
+
+ 	§ 12	Limitation of Liability	
+
+12.1	Maxon is liable without limitation for intent and gross negligence, for injury to life, limb or health, in accordance with the provisions of the Product Liability Act or in the case of an assumed guarantee. 
+
+12.2	Maxon's liability for slightly negligent violations of cardinal obligations is limited to direct damages, which are typical for this license agreement and were foreseeable at execution of the contract. Primary obligations are obligations on the part of Maxon which enable the fulfillment of this license agreement, i.e., which are prerequisites for the execution of this agreement and on which the user must be able to rely. In case of slight negligence Maxon is not liable for lost profit on the part of the user.
+
+12.3	Otherwise Maxon's liability is excluded. 
+
+
+12.4	This limitation of liability also applies to the personal liability of Maxon's employees, representatives and organs.
+
+
+ 	§ 13	Data Protection	
+
+13.1	Maxon complies with the applicable legal provisions when processing personal data. Information on data protection and Maxon's data protection declaration are available on the Internet at: https://www.maxon.net/privacy_policy_en
+
+13.2	If the software has the function "Send information to Maxon", the user can activate and deactivate this function while using the software. Activating this function causes the software to automatically send software and hardware information to Maxon from time to time via the existing network connection. This information includes, but is not limited to, the version and area and language settings of the software, system information about the hardware and data about the use, configuration and problems encountered with the software. The contents and files created and processed by the user as well as personal data (name or address) are not sent to Maxon with this function. Maxon processes and uses the information sent for statistical purposes and to improve its products and services and will only pass it on to third parties or use it for other purposes with the user's consent. Maxon does not link the information sent to personal data and does not use it to identify the user or create user profiles.
+
+
+	§ 14	General Terms	
+
+14.1	Changes in performance as well as collateral agreements, amendments and supplements to this license agreement must be made in writing and must be identified as such.
+
+14.2	If this license agreement is written in several languages, only the German version is binding and the other versions are for informational purposes only. 
+
+14.3	If any provision of this License Agreement is held to be invalid, unenforceable, or incomplete, the remainder of this License Agreement shall continue in full force and effect. The invalid or unenforceable provision or the filling of the gap shall be replaced by the statutory provisions.
+
+14.4	If the user is a company, a legal entity under public law or a holder of special assets under public law, Frankfurt am Main shall be the exclusive place of jurisdiction. The law of the Federal Republic of Germany shall apply to the exclusion of the UN Convention on Contracts for the International Sale of Goods.
+
+
+State: November, 2019

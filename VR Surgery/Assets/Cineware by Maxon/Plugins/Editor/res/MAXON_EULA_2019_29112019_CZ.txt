@@ -1,0 +1,143 @@
+﻿
+
+
+Tato licenční smlouva s koncovým uživatelem je distribuována se softwarovým produktem Maxon („Software“) a / nebo se zobrazuje během instalace. Instalací, reprodukcí nebo jiným použitím softwaru uzavírá uživatel tuto licenční smlouvu se společností Maxon Computer GmbH, Max-Planck-Straße 20, 61381 Friedrichsdorf, Německo (dále jen „Maxon“). Tato licenční smlouva upravuje používání softwaru Maxon, přidružených médií a internetových služeb uživatelem. Používání softwaru bez uzavření této licenční smlouvy je porušením autorských práv.
+
+
+ 	§ 1	Předmět smlouvy	
+
+1.1	Maxon dodává software uživateli tím, že jej zpřístupňuje ke stažení na internetu. Uživatel může nainstalovat a používat software v počítači. Software běží na lokálním počítači a nejedná se o cloudovou nebo webovou službu.
+
+1.2	Maxon licencuje Software v rámci různých licenčních modelů. Je-li poskytnut software, stanoví se příslušný licenční model, doba a výše licenčního poplatku. Tato licenční smlouva upravuje, která práva na užívání uživatel získá s příslušným licenčním modelem a jaká obecná práva a povinnosti má uživatel.
+
+1.3	Aby bylo možné software používat, musí se uživatel zaregistrovat u společnosti Maxon a čas od času se připojit k internetu, aby mohlo dojít k ověření licencování softwaru.
+
+
+ 	§ 2	Trvalá licence	
+
+2.1	Trvalá licence poskytuje uživateli časově neomezené, placené, nevýlučné, nepřenosné a nesublicencovatelné právo na instalaci a používání softwaru v počítači. Kromě toho může Uživatel nainstalovat Software do druhého počítače, ale nesmí používat obě instalace současně a nesmí dovolit třetí straně používat instalaci ve druhém počítači.
+
+2.2	Jednorázový licenční poplatek je splatný při předání softwaru. Udělení práva na užívání je podmíněno tím, že uživatel licenční poplatek řádně a včas zaplatí.
+
+2.3	Uživatel smí používat pouze licencovanou verzi software; V případě, že byla licence převedena z jiné dříve licencované verze, může uživatel každou verzi používat, nikoli však současně.
+
+
+
+ 	§ 3	Předplatné licence	
+
+3.1	S předplatnou licencí uživatel získá časově omezené, placené, nevýlučné, nepřevoditelné a nesublicencovatelné právo na instalaci a používání software. Uživatel navíc nesmí software používat na různých zařízeních současně a nesmí dovolit použití software třetí stranou.
+
+3.2	Při zpřístupnění softwaru je stanovena doba práva na užívání. Na konci období se právo na užívání rozšíří o stejnou dobu, pokud není licenční smlouva písemně vypovězena některou ze stran 14 dní před koncem období. Během tohoto období je vyloučeno řádné ukončení licenční smlouvy.
+
+3.3	Strany se mohou dohodnout na prodloužení lhůty během doby práva na užívání.
+
+3.4	Výše licenčního poplatku závisí na době trvání práva na užívání. Licenční poplatek je splatný při prvním poskytnutí softwaru a při každém prodloužení období. Udělení práva na užívání je podmíněno tím, že uživatel zaplatí splatné licenční poplatky.
+
+3.5	Uživatel může používat jakoukoli verzi dostupnou pro předplatitele, ale nikoli souběžně. Maxon si vyhrazuje právo znepřístupnit verze starší než 3 roky.
+
+
+ 	§ 4	Plovoucí licence	
+
+4.1	S plovoucí licencí uživatel získá placené, nevýlučné a nesublicencovatelné právo instalovat software na libovolný počet počítačů a používat jej současně na licencovaném počtu počítačů. Licenční server musí sledovat použití a zajistit, aby nebyl překročen počet licencovaných souběžných použití. Počet instalací, které mohou být použity současně, je stanoveno při poskytnutí Software.   
+
+4.2	Plovoucí licence mohou být poskytovány jako Trvalé nebo Předplatné licence a to za podmínek vztažených k těmto typům licencí.
+
+
+ 	§ 5	Render Farm License	
+
+5.1	S licencí Render Farm získá uživatel placené, nevýlučné, nepřenosné a nesublicencovatelné právo na instalaci a používání renderovacích klientů obsažených v Softwaru (dále jako “Team Render klient”)  na počítačích v renderovací farmě uživatele.
+
+5.2	Uživatel smí instalovat a používat Team Render klienty na až pěti počítačích najednou ve vlastní renderovací farmě. Právo užití je ale omezeno s ohledem na obsah: uživatel smí použít Team Render klienty pro renderování 3D počítačové grafiky a animací, které uživatel sám vytvořil pro sebe nebo pro třetí osoby. Uživatel nesmí instalovat a používat Team Render klienty (1) mimo render farmu nebo intranet uživatele, (2) pro zpracování dat třetích stran, renderování 3D grafiky či animací třetích stran nebo poskytování renderovacích služeb pro třetí strany nebo (3) v renderovacích farmách, sítích a cloudových službách třetích stran
+
+5.3	Uživatel může použít Command Line Render Client software na licencovaném počtu počítačů v uživatelově renderovací farmě. Právo použití je ale omezeno s ohledem na obsah: uživatel nesmí použít Command Line Render Client software mimo render farmu uživatele nebo v jakýchkoliv síťových či cloudových prostředích třetích stran. Uživateli je dovoleno renderovat animace vytvořené uživatelem pro sebe nebo pro třetí strany, zpracovávat  data třetích stran, renderovat 3D grafiku a animace pro třetí strany nebo pro jiné renderovací služby. Pro použití Command Line Render Client software v rámci renderovací farmy je nutný kontrolní software třetí strany, který není součástí Software. Licenční server musí monitorovat použití těchto licencí a zajistit, že licencované množství současně použitých licencí není překročeno.
+
+5.4	Licence pro render farmy mohou být poskytovány jako Trvalé nebo Předplatné licence a to za podmínek vztažených k těmto typům licencí.
+
+
+ 	§ 6	Licence pro vzdělávací účely	
+
+6.1	Licence pro vzdělávací účely dává uživateli nevýhradní, nepřenosné a nesublicencovatelné právo na instalaci a použití Software na počítači. Toto právo na použití je limitováno na omezený okruh uživatelů. Uživatel musí být: učitelem, lektorem, studentem nebo žákem denního studia ve škole registrované státem, ve školicím centru nebo komerční školicí institucí schválené společností MAXON případ od případu. Uživatel smí software používat pouze pro účely výuky, nikoliv pro jakékoli přímé či nepřímé komerční či firemní účely (vyjma ustanovení v odstavci 6.5). Licence pro vzdělávací účely podléhají schválení individuálních žádostí a jejich použití školami, vzdělávacími institucemi nebo školicími centry není nárokové. Funkce a použití Software může být omezeno.
+
+6.2	Udělení práva na užívání je podmíněno tím, že uživatel společnosti Maxon prokáže, že patří do výše uvedené skupiny osob.
+
+6.3	Licence pro vzdělávací účely je časově omezená. Právo na použití této licence zaniká v momentě, kdy uživatel přestane být součástí výše vyjmenovaných skupin uživatelů a o této skutečnosti je uživatel povinen neprodleně informovat společnost MAXON.
+
+6.4	Společnost Maxon může nabízet Trvalé nebo Předplatné licence školám, univerzitám a komerčním školicím organizacím, jakož i školicím centrům schváleným společností MAXON schváleným případ od případu, za výhodnějších licenčních podmínek, které dovolují uživateli instalovat a používat Software na určitém počtu počítačů exkluzivně pro vzdělávací účely. Podmínky takové licence včetně délky trvání a počtu počítačů, na kterých může být software nainstalován a používán, budou určeny při poskytnutí Software.
+
+6.5	Společnost Maxon a uživatel se mohou dohodnout separátně a odlišně na tom, že uživatel může Licenci pro vzdělávací účely používat nejenom pro účely vzdělávání, ale také přímo či nepřímo pro komerční účely
+
+
+ 	§ 7	Zkušební licence	
+
+7.1	Na základě zkušební licence obdrží uživatel časově omezené, bezplatné, nevýlučné, nepřenosné a nesublicencovatelné právo na instalaci a používání softwaru v počítači. Toto právo na užívání je omezeno obsahem: Uživatel nesmí software používat přímo ani nepřímo pro obchodní nebo komerční účely nebo pro účely školení. Funkce a použití softwaru mohou být omezeny. Každý uživatel může použít jen jednu zkušební licenci ke každé hlavní verzi programu.
+
+7.2	Zkušební licenci lze za aktuálně platných podmínek převést na Trvalou licenci nebo Předplatnou licenci.
+
+
+ 	§ 8	Všeobecné podmínky	
+
+8.1	Registrace Software a právo na užívání jsou vázány na daného Uživatele a nemohou být převedeny nebo sublicencovány na třetí osobu bez předchozího souhlasu společnosti MAXON. Převod práv na užívání Software musí být zdokumentováno společností MAXON, uživatelem a třetí stranou.
+
+8.2	Uživatel smí používat software současně na několika počítačích, pouze pokud to příslušný licenční model výslovně dovoluje nebo pokud mu Maxon výslovně dovolí používat software pro jiné účely.
+
+8.3	Kromě výše uvedených práv na užívání je uživatel oprávněn software kopírovat, přepracovávat, dekompilovat, distribuovat a reprodukovat pouze tehdy, pokud to zákon výslovně dovoluje. Jiné způsoby použití a využití Software jsou uživateli zakázány. Uživatel zejména nesmí převádět, sublicencovat, zveřejňovat, pronajímat nebo jinak umožňovat třetím stranám používat software.
+
+8.4	Právo na užívání Software uživatelem končí u Předplatných licencí na konci časového období a u všech typů licencí pak tehdy, když MAXON nebo uživatel v odůvodněných případech vypoví tuto Licenční smlouvu. Uživatel musí ihned poté přestat Software jakkoliv používat a smazat či zničit všechny jeho kopie. Již uhrazené licenční poplatky se nevracejí.
+
+
+	§ 9	Updaty and Upgrady 	
+
+9.1	Společnost Maxon může dle vlastního uvážení vyvinout a poskytnout uživateli aktualizace (dále jako “Update”) Software za účelem opravy problémů či vylepšení stávajících funkcí, nebo vylepšenou verzi s rozšířenými funkcemi (dále jako “Upgrade”). Pro updaty se například může použít verzování od R21.0.1 do R21.0.2, pro upgrady pak od R21.1 do R21.2 nebo od R21 do R22.
+
+9.2	Právo na používání Update nebo Upgrade uživatelem záleží na licenčním modelu a právu uživatele k použití Software. Uživatel je oprávněn používat Update nebo Upgrade pouze tehdy, pokud má právo na používání Software. Update nebo Upgrade neposkytují uživateli žádná další ani rozšířená práva na použití licencovaného Software.
+
+9.3	Pokud společnost MAXON poskytne uživateli Update, aby zajistila smluvní použití Software nebo odstranění závady, je uživatel povinen tento Update nainstalovat, aby mohl pokračovat v používání Software v souladu se smlouvou. MAXON není odpovědný za vady a škody způsobené tím, že uživatel Update nenainstaloval. Uživatel má vůči společnosti Maxon nárok na poskytnutí updatů a upgradů, pouze pokud s tím strany písemně souhlasí.
+
+
+ 	§ 10	Porušení autorského práva	
+
+10.1	Pokud uživatel poruší tuto licenční smlouvu, použije software bez požadovaných práv na užívání nebo jinak poruší práva duševního vlastnictví společnosti Maxon, právo na užívání udělené v této licenční smlouvě se okamžitě stane neplatným a společnost Maxon může tuto licenční smlouvu ukončit bez předchozího upozornění. Uživatel musí poté okamžitě a úplně zastavit veškeré používání softwaru a odstranit nebo zničit všechny kopie. Ostatní práva, nároky a opatření společnosti Maxon vůči uživateli zůstávají vyhrazena.
+
+10.2	Software obsahuje technické ochranné funkce proti neoprávněnému použití a pro správu práv. Ochranné funkce brání uživateli v používání softwaru způsobem, za účelem nebo v míře, která neodpovídá příslušnému licenčnímu modelu a porušuje tuto licenční smlouvu. Ochranné funkce shromažďují údaje o registraci softwaru, systému a síti, ve které je software nainstalován a používán, a také o čase a počtu použití. Tato data jsou do společnosti Maxon přenášena prostřednictvím komunikačního rozhraní Softwaru prostřednictvím síťových připojení a Internetu. Společnost Maxon zpracovává data, aby splnila tuto licenční smlouvu a chránila software před neoprávněným použitím. Uživatel nesmí odstraňovat nebo obcházet ochranné funkce a nesmí software používat bez ochranných funkcí. Deaktivace funkce „Odeslat informace Maxonu“ v softwaru nedeaktivuje ochranné funkce. 
+
+
+ 	§ 11	Záruky	
+
+11.1	Maxon poskytuje Software uživateli bez vad kvality a vlastnictví.
+
+11.2	Společnost Maxon není povinna odstraňovat vady kvality nebo titulu způsobené (1) používáním softwaru v rozporu s ustanoveními této licenční smlouvy, (2) používáním softwaru v systémech nebo společně s hardwarem a softwarem, které jsou nevhodné pro za tímto účelem a nebyly uvolněny společností Maxon, nebo (3) používání softwaru uživatelem, pokud uživatel nemůže prokázat, že vada nebyla tím způsobena.
+
+11.3	Pokud je uživatel činěn zodpovědným třetí stranou, protože smluvní použití softwaru porušuje vlastnická práva třetí strany, je uživatel povinen neprodleně informovat Maxon, postoupit obhajobu proti těmto nárokům Maxonu a přiměřeně finančně podpořit Maxon za účelem pokrytí jeho nákladů.
+
+11.4	Nároky uživatele na věcné vady a vady vlastnictví zanikají po 24 měsících, pokud je uživatel spotřebitelem, jinak po 12 měsících.
+
+ 	§ 12	Omezení odpovědnosti	
+
+12.1	Společnost Maxon odpovídá bez omezení za úmysl a hrubou nedbalost, za újmu na životě, končetině nebo zdraví v souladu s ustanoveními zákona o odpovědnosti za škodu na produktu nebo v případě převzaté záruky. 
+
+12.2	Odpovědnost společnosti Maxon za mírně nedbalé porušení hlavních povinností je omezena na přímé škody, které jsou typické pro tuto licenční smlouvu a byly předvídatelné při plnění smlouvy. Primární závazky jsou závazky ze strany společnosti Maxon, které umožňují splnění této licenční smlouvy, tj. Které jsou předpoklady pro provedení této smlouvy a na které se uživatel musí spolehnout. V případě mírné nedbalosti Maxon neodpovídá za ušlý zisk uživatele.
+
+12.3	Jinak je odpovědnost společnosti Maxon vyloučena. 
+
+12.4	Toto omezení odpovědnosti se vztahuje také na osobní odpovědnost zaměstnanců, zástupců a orgánů společnosti Maxon.
+
+
+ 	§ 13	Ochrana dat	
+
+13.1	Při zpracování osobních údajů Maxon dodržuje platné právní předpisy. Informace o ochraně údajů a prohlášení společnosti Maxon o ochraně údajů jsou k dispozici na internetu na adrese: https://www.maxon.net/privacy_policy_en
+
+13.2	Pokud má software funkci „Odeslat informace Maxonu“, může uživatel tuto funkci během používání aktivovat a deaktivovat. Aktivace této funkce způsobí, že software automaticky, čas od času, odesílá informace o softwaru a hardwaru společnosti Maxon prostřednictvím existujícího síťového připojení. Tyto informace zahrnují, ale nejsou omezeny na, verzi a oblast a jazykové nastavení softwaru, systémové informace o hardwaru a data o použití, konfiguraci a problémech, se kterými se software setká. Obsah a soubory vytvořené a zpracované uživatelem, jakož i osobní údaje (jméno nebo adresa) se s touto funkcí neposílají společnosti Maxon. Maxon zpracovává a používá informace zasílané pro statistické účely a ke zlepšování svých produktů a služeb a předává je třetím stranám nebo je používá pro jiné účely pouze se souhlasem uživatele. Společnost Maxon nepřipojuje informace zaslané k osobním údajům a nepoužívá je k identifikaci uživatele ani k vytváření uživatelských profilů.
+
+
+	§ 14	Obecná ustanovení	
+
+14.1	Změny ve výkonu a dohody o zajištění, doplňky a dodatky k této licenční smlouvě musí být provedeny písemně a musí být jako takové označeny.
+
+14.2	Pokud je tato licenční smlouva psána v několika jazycích, je závazná pouze německá verze a ostatní verze jsou pouze informativní. 
+
+14.3	Pokud bude jakékoli ustanovení této licenční smlouvy považováno za neplatné, nevymahatelné nebo neúplné, zůstane zbývající část této licenční smlouvy v plné platnosti a účinnosti. Neplatné nebo nevynutitelné ustanovení nebo zaplnění mezery se nahrazují zákonnými ustanoveními.
+
+14.4	Je-li uživatel společností, právnickou osobou podle veřejného práva nebo držitelem zvláštních aktiv podle veřejného práva, je výlučným místem jurisdikce Frankfurt and Mohanem, Německo. Na vyloučení Úmluvy OSN o smlouvách o mezinárodní koupi zboží se použije právo Spolkové republiky Německo..
+
+
+vydání: listopad 2019

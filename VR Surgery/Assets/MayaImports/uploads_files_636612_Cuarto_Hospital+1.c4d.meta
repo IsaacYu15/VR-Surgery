@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 1975b4df01b7c2c459b4ab27e173b9fe
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232132998, guid: 89816876ca3c84f4381bb81607cfdd4c, type: 3}
+  sharedProperties:
+    _importCameras: 1
+    _importLights: 1
+    _updateMaterials: 0
+    _legacyAnimationComponents: 1
+    _generateLightmapUV: 0
+    _lightmapUnwrapHardAngle: 88
+    _lightmapUnwrapPackMargin: 64
+    _lightmapUnwrapAngleError: 8
+    _lightmapUnwrapAreaError: 15
+    _modelledUnitInt: 0
+    _customScale: 1
+    _layoutInt: 0
+    _logHints: 1
+    _logWarnings: 1
+    _logErrors: 1
+    _showDialogForRelativeTexturePaths: 1
+  _useGlobalSettings: 0
+  _boneSelection: []

@@ -1,0 +1,143 @@
+﻿
+
+Ce contrat de licence Utilisateur final est distribué avec un produit logiciel Maxon ("Logiciel") et/ou affiché durant son installation. En installant, reproduisant ou utilisant de quelconque autre manière le logiciel, l'utilisateur final s'engage au travers du présent contrat de licence vis-à-vis de Maxon Computer GmbH, Max-Planck-Straße 20, 61381 Friedrichsdorf, Allemagne ("Maxon"). Ce contrat de licence régit l'usage de l'utilisateur du logiciel Maxon, des médias et services Internet associés. L'usage du logiciel sans acceptation du présent contrat de licence constitue une violation de droit d'auteur. 
+
+
+
+ 	§ 1	Objet du contrat	
+
+1.1	Maxon fournit le logiciel à l'utilisateur en le rendant disponible au téléchargement sur Internet. L'utilisateur peut installer et utiliser le logiciel. Le logiciel n'a pas besoin d'accéder à un site web ni un service cloud lorsqu'il est utilisé sur cet ordinateur. Le logiciel est fonctionnel sur un ordinateur local et n'est pas un service basé sur le cloud ou sur le web.  
+
+1.2	Maxon octroie différents modèles de licences du logiciel. Lorsque le logiciel est fourni, le modèle de licence applicable, sa durée et le montant du droit de licence sont déterminés. Le présent contrat de licence réglemente les droits d'utilisation acquis par l'utilisateur grâce au modèle de licence qui est le sien, ainsi que les droits et obligations généraux qui lui incombent.
+
+1.3	Afin d'utiliser le logiciel, l'utilisateur doit s'enregistrer auprès de Maxon et se connecter de temps à autre sur Internet afin de vérifier le statut de la licence du logiciel. 
+
+
+ 	§ 2	Licence perpétuelle	
+
+2.1	Une licence perpétuelle garantit à l'utilisateur un droit à durée illimitée, à titre onéreux, non-exclusif, incessible et non susceptible de sous-licence, d'installer et d'utiliser le logiciel sur un ordinateur. Par ailleurs, l'Utilisateur n’est pas autorisé utiliser le Logiciel sur plusieurs appareils en même temps ni à laisser quelconque tiers utiliser le logiciel.
+
+2.2	Un droit de licence unique est dû lorsque le logiciel est transmis. L'octroi du droit d'utilisation est soumis à la condition du paiement du droit de licence par l'utilisateur.
+  
+
+2.3	L'utilisateur n'est autorisé à utiliser la version sous licence du logiciel que si la licence a été transférée depuis une version anciennement sous licence. L’Utilisateur pourra utiliser les deux versions mais non simultanément.  
+
+
+ 	§ 3	Licence d'abonnement	
+
+3.1	Avec la licence d'abonnement, l'utilisateur reçoit un droit limité dans le temps, à titre onéreux, non-exclusif et non susceptible de sous-licence, d'installer et utiliser le logiciel. De plus, l'Utilisateur ne peut utiliser le logiciel simultanément sur plusieurs ordinateurs ni autoriser quelconque tiers à utiliser le logiciel.
+
+3.2	Lorsque le logiciel est transféré, la durée du droit d'utilisation est déterminée. À l'issue de ce délai, le droit d'utilisation est prolongé pour une durée identique si le contrat de licence n'est pas résilié par écrit par l'une ou l'autre des parties dans un délai de 14 jours avant l'échéance initiale. Durant cette durée, la résiliation normale du contrat de licence est exclue.
+
+3.3	Les parties sont susceptibles de s'entendre sur une prolongation de la durée au cours même de la durée du droit d'utilisation.    
+
+3.4	Le montant du droit de licence dépend de la durée du droit d'utilisation. Le droit de licence est dû dès la première distribution du logiciel et à chaque prolongation du contrat. L'octroi du droit d'utilisation est soumis à la condition du paiement du droit de licence par l'utilisateur.   
+
+3.5	L’utilisateur pourra utiliser toute version disponible pour le souscripteur mais non simultanément. Maxon se réserve le droit de supprimer toute version présentant plus de trois ans d’ancienneté. 
+
+
+ 	§ 4	Licence flottante	
+
+4.1	Avec une licence flottante, l'utilisateur reçoit le droit à titre onéreux, non-exclusif et non susceptible de sous-licence, d'installer le logiciel sur un nombre illimité d'ordinateurs et de l'utiliser simultanément sur tous les ordinateurs sous licence. Un serveur de licence doit contrôler l'utilisation et garantir que le nombre d'utilisations concurrentes n'est pas dépassé. Le nombre d'installations pouvant être utilisées simultanément est déterminé au moment où le logiciel est fourni.  
+
+4.2	La licence flottante peut être une licence perpétuelle ou une licence d'abonnement conformément aux conditions applicables.
+
+
+ 	§ 5	Licence Ferme de rendu	
+
+5.1	Avec une licence Ferme de rendu, l'utilisateur reçoit un droit acquitté, non-exclusif, incessible et non susceptible de sous-licence d'installer et utiliser les clients de rendu contenus dans le logiciel sur les ordinateurs au sein de la ferme de rendu de l'utilisateur.  
+
+5.2	L'utilisateur peut installer et utiliser le Client de rendu d'équipe sur simultanément 1 à 5 ordinateurs de la ferme de rendu de l'utilisateur. Ce droit d'utilisation est limité dans son contenu : L'utilisateur ne peut utiliser le Client de rendu d'équipe que pour rendre des graphiques informatiques et animations 3D créés par lui ou pour des tiers. L'utilisateur ne peut utiliser le Client de rendu d'équipe (1) en dehors de la ferme de rendu ou l'intranet de l'utilisateur, (2) pour traiter des données de tiers, rendre des graphiques et animations 3D de tiers, ou autres services de rendu pour le compte de tiers, ou (3) dans des fermes de rendu, réseaux et services de cloud de tiers. 
+
+5.3	L'utilisateur peut utiliser le Client de rendu de la Ligne de commande sur les ordinateurs sous licence au sein de la ferme de rendu de l'utilisateur. Ce droit d'utilisation est limité dans son contenu : l'utilisateur ne devra pas utiliser le Client de rendu de la Ligne de commande en dehors de la ferme de rendu de l'utilisateur ou au sein de réseaux ou services de cloud de tiers. L'utilisateur pourra utiliser le Client de rendu de la Ligne de commande pour rendre des graphiques informatiques 3D et 
+-L'utilisateur est aussi autorisé à rendre des animations créées par l'utilisateur ou à l'attention de tiers, à traiter des données de tiers, afin de rendre des graphiques informatiques et animations 3D de tiers ou autres services de rendu. Afin d'utiliser le Client de rendu de la Ligne de commande dans la ferme de rendu, un logiciel de contrôle de tiers est requis, indépendant du logiciel. Un serveur de licence doit contrôler l'utilisation et garantir que le nombre d'utilisations concurrentes n'est pas dépassé
+
+5.4	La licence de ferme de rendu peut être une licence perpétuelle ou une licence d'abonnement conformément aux conditions applicables. 
+
+
+ 	§ 6	Licences à buts éducatifs	
+
+6.1	Une licence éducative confère à l'utilisateur un droit libre de redevances, non-exclusif, incessible et non susceptible de sous-licence d'installer et utiliser le Logiciel sur un ordinateur. Ce droit d'utilisation est limité dans son contenu : l'Utilisateur doit être un enseignant, un formateur un étudiant ou un élève au sein d'une école publique ou visée par l'État, d'un collège technique d'une université, dans un centre de formation approuvée par Maxon au cas par cas, ou au sein d'une société commerciale de formation. L'utilisateur n'utilisera le logiciel que dans le but exclusif d'enseigner et d'apprendre et à des fins commerciales directes ou indirectes (soumis à 6.5). La licence à buts éducatifs est personnalisée et ne confère pas aux écoles, collèges techniques, universités ou sociétés commerciales de formation un droit d'utilisation. Les fonctionnalités et l'usage du logiciel peuvent être restreints.   
+
+6.2	L'octroi du droit d'utilisation est soumis à la condition que l'utilisateur prouve à Maxon qu'il appartient bien au groupe de personnes précédemment mentionné. 
+
+6.3	La licence à buts éducatifs est limitée dans le temps. Le droit d'utilisation s'éteint dès lors que l'utilisateur cesse d'appartenir au groupe mentionné ci-dessus, événement que l'utilisateur a obligation de porter immédiatement à la connaissance de Maxon.  
+6.4	Maxon peut proposer des licences perpétuelles ou d'abonnement à des écoles, collèges techniques, universités et sociétés commerciale de formation, ainsi qu'à des centres de formation approuvés par Maxon à la demande et individuellement, sous des conditions de licence plus favorables, qui permettront à l'utilisateur d'installer et utiliser le logiciel sur un certain nombre d'ordinateurs et exclusivement à des fins pédagogiques. Les conditions générales de la licence ainsi que le nombre d'ordinateurs sur lesquels le logiciel peut être installé seront déterminés au moment où le logiciel est fourni.
+
+6.5	Maxon et l'utilisateur peuvent s'entendre différemment et séparément sur la possibilité pour l'utilisateur d'utiliser le logiciel à des fins éducatives et non uniquement pédagogiques, mais également à des fins commerciales directes ou indirectes.
+
+
+ 	§ 7	Licence d'essai	
+
+7.1	Avec une licence d'essai, l'utilisateur reçoit un droit à durée limitée, gratuit, non-exclusif, incessible et non susceptible de sous-licence, d'installer et d'utiliser le logiciel sur un ordinateur. Ce droit d'utilisation est limité dans son contenu : l'Utilisateur ne peut utiliser le logiciel à des fins commerciales directes ou indirectes ni à des fins de formation. Les fonctionnalités et l'usage du Logiciel peuvent être restreints. Chaque utilisateur peut utiliser une licence d’essai unique par version majeure.
+
+7.2	La licence d'essai peut être transformée en licence perpétuelle ou en licence d'abonnement de manière ponctuelle conformément aux conditions générales en vigueur. 
+
+
+ 	§ 8	Conditions générales	
+
+8.1	L'enregistrement du logiciel et le droit d'utilisation sont liés à l'utilisateur et ne peuvent être cédés ni faire l'objet d'une sous-licence au profit de tiers sans le consentement de Maxon. Une cession de droit d'utilisation doit être documentée par Maxon, l'utilisateur et le tiers. 
+
+8.2	L'utilisateur ne pourra utiliser le logiciel sur plusieurs ordinateurs que si le modèle de licence dont il dispose l'autorise expressément ou si Maxon l'autorise expressément à utiliser le logiciel à d'autres fins. 
+
+8.3	En plus des droits d'utilisation ci-dessus mentionnés, l'utilisateur n'est seulement autorisé à reproduire, retravailler, décompiler, distribuer et reproduire le logiciel que si la loi l'y autorise expressément. Les autres usages et exploitations du logiciel ne sont pas permis à l'utilisateur. L'utilisateur ne devra notamment pas céder, proposer une sous-licence, rendre publiquement accessible, louer ni permettre en aucune autre manière à des tiers l'utilisation du logiciel. 
+
+8.4	Le droit d'utilisation de l'utilisateur cesse à l'issue de la durée prévue dans le contrat de licence en cas de modèles de licence temporaire et pour tous les modèles de licence, dès lors que Maxon ou l'utilisateur résilie le présent contrat de licence pour un motif pertinent. L'utilisateur devra alors cesser tout usage du logiciel immédiatement et complètement et en supprimer ou détruire toutes les copies. Les droits de licence déjà versés ne seront pas remboursés.
+
+
+	§ 9	Mises à jour et Mises à niveau	
+
+9.1	Maxon peut, à son entière discrétion, développer et fournir à l'utilisateur des mises à jour du logiciel aux fins de combler ses lacunes et proposer des fonctionnalités améliorées, ainsi que des mises à niveau offrant des fonctionnalités étendues. Pour les mises à jour, par exemple, la désignation de la version s'adapte de la R21.0.1 à la R21.0.2, pour les mises à jour de la R21.1 à la R21.2 ou de la R21 à la R22.
+
+9.2	Le droit d'utilisation des mises à jour et des mises à niveau est basé sur le modèle de licence et le droit d'utilisation du logiciel de l'utilisateur. L'utilisateur n'est autorisé à utiliser une mise à jour ou une mise à niveau que s'il détient le droit d'utilisation du logiciel. Une mise à jour ou une mise à niveau ne confèrent à l'utilisateur aucun droit étendu ou supplémentaire d'utilisation du logiciel sous licence. 
+
+9.3	Si Maxon fournit à l'utilisateur une mise à jour afin d'assurer l'utilisation contractuelle du logiciel ou d'éliminer un vice, l'utilisateur doit installer la mise à jour pour continuer d'utiliser le logiciel conformément au contrat. Maxon ne peut être tenu pour responsable de défauts et dommages causés par l'utilisateur n'ayant pas installé la mise à jour. L'utilisateur ne pourra entamer de réclamation vis-à-vis de Maxon pour la fourniture de mises à jour et mises à niveau que si les parties s'entendent sur ce point par écrit. 
+
+
+ 	§ 10	Violation de droit d'auteur	
+
+10.1	Si l'utilisateur enfreint ce contrat de licence, utilise le logiciel sans disposer des droits d'utilisation requis ou viole d'une quelconque autre manière les droits de propriété intellectuelle de Maxon, le droit d'utilisation conféré par le présent contrat de licence s'annulera immédiatement et Maxon se réserve le droit de résilier le présent contrat de licence sans préavis. L'utilisateur devra alors cesser toute utilisation du logiciel immédiatement et intégralement et en supprimer ou détruire toutes les copies. Tout autre droit, revendication et mesure possibles de la part de Maxon à l'encontre de l'utilisateur sont maintenus sous réserve.  
+
+10.2	Le logiciel comprend des fonctions de protection techniques contre un usage non autorisé et pour l'administration des droits. Ces fonctions protectrices empêchent l'utilisateur d'utiliser le logiciel d'une manière, à des fins ou dans une mesure non conforme au modèle de licence dont il dispose et enfreignant le présent contrat de licence. Ces fonctions protectrices collectent des données relatives à l'enregistrement du logiciel, au système et au réseau au sein desquels le logiciel a été installé et utilisé, ainsi que les dates d'utilisation et leur nombre. Ces données sont transmises à Maxon via une interface de communication du Logiciel via des connexions réseau et Internet. Maxon traite ces données afin d'honorer le présent contrat de licence et de se protéger contre tout usage non autorisé du logiciel. L'utilisateur ne devra supprimer ni contourner les mesures protectrices ni utiliser le logiciel sans ces mesures protectrices. La désactivation de la fonction "Envoyer ces informations à Maxon" dans el logiciel ne désactive pas les fonctions de protection.  
+
+
+ 	§ 11	Garanties 	
+
+11.1	Maxon fournit à l'utilisateur le logiciel exempt de défauts matériels et juridiques.
+
+11.2	Maxon n'a aucune obligation de réparation de défauts matériels et juridiques causés par (1) un usage du logiciel contraire aux dispositions du présent Contrat de licence, (2) l'utilisation du logiciel dans des systèmes ou conjointement avec un environnement matériel et logiciel non compatibles et non distribués par Maxon, ou (3) l'utilisation du logiciel par l'utilisateur à moins que l'utilisateur ne puisse prouver que le défaut n'a pas été causé par lui-même. 
+
+11.3	Si l'utilisateur est tenu pour responsable par un tiers du fait que l'usage contractuel du logiciel viole les droits de propriété de ce tiers, l'utilisateur devra en informer Maxon immédiatement, se constituer une défense face à ces accusations portées contre Maxon et venir en soutien financier correct de Maxon dans les dépenses engagées. 
+
+11.4	Les réclamations de l'utilisateur pour vices de matériel et vice juridique expireront à la suite d'un délai de 24 mois si l'utilisateur est un consommateur, et dans les autres cas 12 mois. 
+
+ 	§ 12	Limitation de Responsabilité	
+
+12.1	Maxon peut être tenu pour responsable, sans limitation, en cas de faute intentionnelle et négligence grave, d'atteinte à la vie, à l'intégrité physique ou à la santé, conformément aux dispositions de la Loi sur la responsabilité liée aux produits, ou en cas de garantie assumée. 
+
+12.2	La responsabilité de Maxon en cas de violations par négligence légère d’obligations majeures se limite aux dommages directs, typiques dans le cadre du présent contrat de licence et prévisibles lors de l’exécution du contrat. Les obligations majeures sont des obligations incombant à Maxon permettant la réalisation du présent contrat de licence, par ex., qui constituent des conditions à l’exécution du présent contrat et sur lesquelles l’utilisateur doit pouvoir compter. En cas de négligence légère, Maxon ne peut être tenu pour responsable de quelconque perte de bénéfice subie par l’utilisateur.
+
+12.3	Toute autre responsabilité de Maxon est exclue. 
+
+12.4	Cette limitation de responsabilité s’applique également à la responsabilité personnelle des employés, représentants et organes de Maxon.
+
+
+ 	§ 13	Protection des données	
+
+13.1	Maxon se conforme aux dispositions légales applicables lors du traitement des données. Les informations liées à la protection des données et la déclaration de protection des données de Maxon   sont disponibles sur Internet à l’adresse : https://www.maxon.net/privacy_policy_en
+
+13.2	Si le logiciel dispose de la fonction "Envoyer des informations à Maxon", l’utilisateur peut activer et désactiver cette fonction lors de son utilisation du logiciel. L'activation de cette fonction ordonne au logiciel d'envoyer automatiquement les informations d'ordre logiciel et matériel à Maxon de façon ponctuelle via le réseau de connexion existant. Ces informations incluent, sans limitation, es paramètres de la version, de la zone géographie et de la langue du logiciel, des informations sur le système à propos du matériel et des données liées à l'utilisation, la configuration et les problèmes rencontrés avec le logiciel. Les contenus et fichiers créés et traités par l'utilisateur ainsi que ses données personnelles (nom et adresse) ne sont pas envoyées à Maxon avec cette fonction. Maxon traite et utilise les informations envoyées à des fins statistiques et d'amélioration de ses produits et services et le les transfèrera à des tiers ni les utilisera à d'autres fins qu'avec le consentement de l'utilisateur. Maxon, ne relie pas les informations envoyées aux données personnelles et en les utilise pas pour identifier l'utilisateur et créer des profils d'utilisateurs.  
+
+
+	§ 14	Conditions générales	
+
+14.1	Les modifications en termes de performance ainsi que les accords, amendements et adjonctions annexes au présent contrat de licence doivent être réalisés par écrits et identifiés comme tels. 
+
+14.2	Si le présent contrat de licence a été rédigé en différentes langues, seule la version allemande est exécutoire, les autres versions étant uniquement présentées à titre informatif.  
+
+14.3	Si l'une quelconque des dispositions du présent Contrat de licence est jugée invalide, inapplicable ou incomplète, le reste du présent contrat de licence demeure quant à lui pleinement en vigueur. La disposition invalide ou inapplicable ou la lacune à combler seront remplacées par les dispositions légales. 
+
+14.4	Si l'utilisateur est une entreprise, une personne morale de droit public ou un établissement public, Frankfurt am Main constituera le lieu de juridiction exclusif. La législation de la République Fédérale d'Allemagne s'appliquera à l'exclusion de la Convention des Nations Unies sur les contrats de Vente Internationale de Marchandises.   
+
+
+Mise à jour : Novembre 2019

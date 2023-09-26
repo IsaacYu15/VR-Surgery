@@ -1,0 +1,142 @@
+﻿
+
+Dieser Endbenutzer-Lizenzvertrag wird mit einem Maxon-Softwareprodukt („Software“) verbreitet und/oder bei der Installation angezeigt. Mit der Installation, Vervielfältigung oder sonstigen Benutzung der Software schließt der Benutzer diesen Lizenzvertrag mit Maxon Computer GmbH, Max-Planck-Straße 20, 61381 Friedrichsdorf, Deutschland („Maxon“). Dieser Lizenzvertrag regelt die Benutzung der Software, der dazugehörigen Medien und der internetbasierten Dienste von Maxon durch den Benutzer. Die Benutzung der Software ohne Abschluss dieses Lizenzvertrags ist eine Urheberrechtsverletzung.
+
+
+ 	§ 1	Vertragsgegenstand	
+
+1.1	Maxon überlässt dem Benutzer die Software durch Bereitstellen der Software zum Download im Internet. Der Benutzer kann die Software auf einem Computer installieren und benutzen. Die Software wird auf dem lokalen Computer ausgeführt und ist kein Cloud- oder Web-basierter Service.
+
+1.2	Maxon lizenziert die Software mit verschiedenen Lizenzmodellen. Bei der Überlassung der Software werden das geltende Lizenzmodell, die Laufzeit und die Höhe der Lizenzgebühr festgelegt. Dieser Lizenzvertrag regelt, welche Nutzungsrechte der Benutzer mit dem jeweiligen Lizenzmodell erwirbt, und welche allgemeinen Rechte und Pflichten der Benutzer hat.
+
+1.3	Zur Benutzung der Software sind eine Registrierung des Benutzers bei Maxon und von Zeit zu Zeit eine Verbindung mit dem Internet notwendig, um die Lizenzierung der Software zu überprüfen. 
+
+
+ 	§ 2	Perpetual-Lizenz	
+
+2.1	Mit einer Perpetual-Lizenz erhält der Benutzer das zeitlich unbeschränkte, entgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die Software zu installieren und zu benutzen. Der Benutzer darf die Software nicht zeitgleich auf unterschiedlichen Geräten benutzen und einem Dritten nicht die Benutzung ermöglichen.
+
+2.2	Die einmalige Lizenzgebühr wird bei der Überlassung der Software fällig. Die Einräumung des Nutzungsrechts steht unter der Bedingung, dass der Benutzer die Lizenzgebühr bezahlt. 
+
+2.3	Der Benutzer darf nur die lizenzierte Version der Software nutzen. In dem Fall, dass die Lizenz von einer vormals lizensierten Version übertragen worden ist, darf der Nutzer jede der beiden Versionen nutzen, jedoch nicht gleichzeitig. 
+
+
+
+ 	§ 3	Subscription-Lizenz	
+
+3.1	Mit einer Subscription-Lizenz erhält der Benutzer das zeitlich beschränkte, entgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die Software zu installieren und zu benutzen. Der Benutzer darf die Software nicht zeitgleich auf unterschiedlichen Geräten benutzen und einem Dritten nicht die Benutzung ermöglichen.
+
+3.2	Bei der Überlassung der Software wird die Laufzeit des Nutzungsrechts festgelegt. Am Ende der Laufzeit verlängert sich das Nutzungsrecht um dieselbe Laufzeit, wenn der Lizenzvertrag nicht von einer Partei mit einer Frist von 14 Tagen vor Ende der Laufzeit schriftlich gekündigt wird. Während der Laufzeit ist eine ordentliche Kündigung des Lizenzvertrags ausgeschlossen.
+
+3.3	Die Parteien können während der Laufzeit des Nutzungsrechts eine Verlängerung der Laufzeit vereinbaren. 
+
+3.4	Die Höhe der Lizenzgebühr richtet sich nach der Laufzeit des Nutzungsrechts. Die Lizenzgebühr wird bei der erstmaligen Überlassung der Software und bei jeder Verlängerung der Laufzeit fällig. Die Einräumung des Nutzungsrechts steht unter der Bedingung, dass der Benutzer die fälligen Lizenzgebühren bezahlt.
+
+3.5	Der Benutzer kann jede unter der Subscription-Lizenz zur Verfügung stehende Version verwenden, jedoch nicht gleichzeitig. Maxon behält sich das Recht vor, Versionen, die älter als 3 Jahre sind, nicht mehr zu unterstützen. 
+
+
+ 	§ 4	Floating-Lizenz 	
+
+4.1	Mit einer Floating-Lizenz erhält der Benutzer das entgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die Software auf einer beliebigen Anzahl von Computern zu installieren und auf der lizenzierten Anzahl von Computern gleichzeitig zu benutzen. Dabei muss ein Lizenzserver die Benutzungen überwachen und sicherstellen, dass die lizenzierte Anzahl gleichzeitiger Benutzungen nicht überschritten wird. Bei der Überlassung der Software wird die Anzahl der Installationen festgelegt, die gleichzeitig benutzt werden dürfen.
+
+4.2	Die Floating-Lizenz kann eine Perpetual-Lizenz oder Subscription-Lizenz zu den jeweils geltenden Bedingungen sein. 
+
+
+ 	§ 5	Renderfarm-Lizenz 	
+
+5.1	Mit einer Renderfarm-Lizenz erhält der Benutzer das entgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die in der Software enthaltenen Render Clients auf Computern in seiner Renderfarm zu installieren und zu benutzen. 
+
+5.2	Der Benutzer darf den Team Render Client auf bis zu 5 Computern in seiner Renderfarm gleichzeitig installieren und benutzen. Dieses Nutzungsrecht ist inhaltlich beschränkt: Der Benutzer darf den Team Render Client nur benutzen, um 3D-Computergrafiken und -Animationen zu rendern, die er selbst für sich oder Dritte erstellt hat. Der Benutzer darf den Team Render Client nicht (1) außerhalb seiner Renderfarm oder seines Intranets, (2) zur Verarbeitung der Daten Dritter, zum Rendern von 3D-Grafiken und -Animationen Dritter und zu sonstigen Render-Dienstleistungen für Dritte oder (3) in Renderfarmen, Netzwerken und Cloud-Diensten eines Dritten benutzen.
+
+5.3	Der Benutzer darf den Commandline Render Client auf der lizenzierten Anzahl von Computern in seiner Renderfarm benutzen. Dieses Nutzungsrecht ist inhaltlich beschränkt: Der Benutzer darf den Commandline Render Client nicht außerhalb seiner Renderfarm und in Netzwerken und Cloud-Diensten eines Dritten benutzen. Der Benutzer darf den Commandline Render Client benutzen, um 3D-Computergrafiken und 
+-Animationen zu rendern, die er selbst für sich oder Dritte erstellt hat, sowie zur Verarbeitung der Daten Dritter, zum Rendern von 3D-Grafiken und -Animationen Dritter und zu sonstigen Render-Diensten. Zur Benutzung des Commandline Render Clients in der Renderfarm ist eine Steuersoftware von Drittanbietern erforderlich, die nicht Bestandteil der Software ist. Ein Lizenzserver muss die Benutzungen überwachen und sicherstellen, dass die lizenzierte Anzahl gleichzeitiger Benutzungen nicht überschritten wird. 
+
+5.4	Die Renderfarm-Lizenz kann eine Perpetual-Lizenz oder eine Subscription-Lizenz zu den jeweils geltenden Bedingungen sein.
+
+
+ 	§ 6	Lizenz zu Bildungszwecken	
+
+6.1	Mit einer Lizenz zu Bildungszwecken erhält der Benutzer das unentgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die Software auf einem Computer zu installieren und zu benutzen. Dieses Nutzungsrecht ist inhaltlich beschränkt: Der Benutzer muss ein Lehrer, Ausbilder, Student oder Schüler an einer staatlichen oder staatlich anerkannten Schule, Fachhochschule, Hochschule, an einer von Maxon auf Antrag im Einzelfall genehmigten Schulungseinrichtungen oder einer gewerblichen Schulungsunternehmen sein. Der Benutzer darf die Software ausschließlich selbst für lehrende und lernende Zwecke benutzen und nicht unmittelbar oder mittelbar zu geschäftlichen und gewerblichen Zwecken (vorbehaltlich 6.5). Die Lizenz zu Bildungszwecken ist personenbezogen und berechtigt nicht Schulen, Fachhochschulen, Hochschulen oder gewerbliche Schulungsunternehmen zur Benutzung. Die Funktionen und die Benutzung der Software können eingeschränkt sein. 
+
+6.2	Die Einräumung des Nutzungsrechts steht unter der Bedingung, dass der Benutzer gegenüber Maxon nachweist, dass er zu dem oben genannten Personenkreis gehört. 
+
+6.3	Die Lizenz zu Bildungszwecken ist zeitlich beschränkt. Das Nutzungsrecht endet, sobald der Benutzer nicht mehr zu dem oben aufgeführten Personenkreis gehört, und der Benutzer ist verpflichtet, Maxon hierüber unverzüglich zu informieren.
+
+6.4	Maxon kann Schulen, Fachhochschulen, Hochschulen und gewerblichen Schulungsunternehmen sowie den von Maxon auf Antrag im Einzelfall genehmigten Schulungseinrichtungen Perpetual- oder Subscription-Lizenzen zu günstigeren Lizenzbedingungen anbieten, die zur Installation und Benutzung der Software auf einer bestimmten Anzahl von Computern ausschließlich zu lehrenden Zwecken berechtigen. Bei der Überlassung wird festgelegt, unter welchen Bedingungen die Lizenz steht und auf welcher Anzahl von Computern die Software installiert und benutzt werden darf. 
+
+6.5	Maxon und der Benutzer können gesondert und hiervon abweichend vereinbaren, dass der Benutzer die Software zu Bildungszwecken nicht nur für lehrende Zwecke, sondern auch unmittelbar oder mittelbar zu geschäftlichen und gewerblichen Zwecken benutzen darf.
+
+
+ 	§ 7	Trial-Lizenz	
+
+7.1	Mit einer Trial-Lizenz erhält der Benutzer das zeitlich beschränkte, unentgeltliche, nicht-ausschließliche, nicht übertragbare und nicht unterlizenzierbare Recht, die Software auf einem Computer zu installieren und zu benutzen. Dieses Nutzungsrecht ist inhaltlich beschränkt: Der Benutzer darf die Software nicht unmittelbar oder mittelbar zu geschäftlichen und gewerblichen Zwecken oder zu Schulungs- und Trainingszwecken benutzen. Die Funktionen und die Benutzung der Software können eingeschränkt sein. Jeder Benutzer kann pro Major-Release eine Trial-Lizenz nutzen.
+
+7.2	Die Trial-Lizenz kann in eine Perpetual-Lizenz oder Subscription-Lizenz zu den jeweils geltenden Bedingungen umgewandelt werden.
+
+
+ 	§ 8	Allgemeine Lizenzbedingungen	
+
+8.1	Die Registrierung der Software und das Nutzungsrecht sind an den Benutzer gebunden und können ohne Maxons Zustimmung nicht auf Dritte übertragen oder unterlizenziert werden. Eine Übertragung des Nutzungsrechts muss von Maxon, dem Benutzer und dem Dritten dokumentiert werden.
+
+8.2	Der Benutzer darf die Software dann auf mehreren Computern zeitgleich benutzen, wenn das geltende Lizenzmodell es ausdrücklich erlaubt oder Maxon ihm bei der Überlassung der Software ausdrücklich weitere Nutzungen gestattet.
+
+8.3	Der Benutzer ist neben den oben genannten Nutzungsrechten ausschließlich dann berechtigt, die Software zu vervielfältigen, umzuarbeiten, zu dekompilieren, zu verbreiten und wiederzugeben, wenn dies gesetzlich ausdrücklich erlaubt ist. Sonstige Benutzungen und Verwertungen der Software sind dem Benutzer nicht erlaubt. Insbesondere darf der Benutzer die Software nicht übertragen, unterlizenzieren, öffentlich zugänglich machen, vermieten oder auf sonstige Weise Dritten die Benutzung ermöglichen. 
+
+8.4	Das Nutzungsrecht des Benutzers endet bei zeitlich beschränkten Lizenzmodellen mit dem Ende der Laufzeit des Lizenzvertrags und bei allen Lizenzmodellen, sobald Maxon oder der Benutzer diesen Lizenzvertrag aus wichtigem Grund kündigen. Der Benutzer muss dann jede Benutzung der Software sofort und vollständig einstellen und alle Vervielfältigungen löschen oder vernichten. Bereits bezahlte Lizenzgebühren werden nicht erstattet.
+
+	§ 9	Updates und Upgrades 	
+
+9.1	Maxon kann nach eigenem Ermessen Updates der Software zur Mängelbeseitigung und mit verbesserten Funktionen sowie Upgrades mit erweiterten Funktionen entwickeln und dem Benutzer überlassen. Bei Updates wird die Versionsbezeichnung beispielsweise von R21.0.1 auf R21.0.2 erhöht, bei Upgrades von R21.1 auf R21.2 oder R21 auf R22.
+
+9.2	Das Nutzungsrecht an den Updates und Upgrades richtet sich nach dem Lizenzmodell und dem Nutzungsrecht des Benutzers an der Software. Der Benutzer ist nur dann zur Benutzung eines Updates und Upgrades berechtigt, wenn er ein Nutzungsrecht an der Software hat. Ein Update oder Upgrade gibt dem Benutzer keine zusätzlichen oder erweiterten Nutzungsrechte an der lizenzierten Software. 
+
+9.3	Wenn Maxon dem Benutzer ein Update zur Verfügung stellt, um die vertragsgemäße Benutzung der Software sicherzustellen oder einen Mangel zu beseitigen, muss er das Update installieren, um die Software weiterhin vertragsgemäß zu benutzen. Maxon ist nicht verantwortlich für Mängel und Schäden, die dadurch verursacht werden, dass der Benutzer das Update nicht installiert. Der Benutzer hat gegen Maxon nur dann einen Anspruch auf Überlassung von Updates und Upgrades, wenn die Parteien dies schriftlich vereinbaren. 
+
+
+ 	§ 10	Verletzung von Schutzrechten	
+
+10.1	Wenn der Benutzer gegen diesen Lizenzvertrag verstößt, die Software ohne die erforderlichen Nutzungsrechte benutzt oder Maxons Schutzrechte auf sonstige Weise verletzt, wird das in diesem Lizenzvertrag erteilte Nutzungsrecht sofort unwirksam und Maxon kann diesen Lizenzvertrag fristlos kündigen. Der Benutzer muss dann jede Benutzung der Software sofort und vollständig einstellen und alle Vervielfältigungen löschen oder vernichten. Maxons sonstige Rechte, Ansprüche und Maßnahmen gegen den Benutzer bleiben vorbehalten.
+
+10.2	Die Software enthält technische Schutzfunktionen gegen unerlaubte Benutzungen und zur Rechtewahrnehmung. Die Schutzfunktionen verhindern, dass der Benutzer die Software auf eine Art, zu einem Zweck oder in einem Umfang benutzt, die nicht dem jeweiligen Lizenzmodell entsprechen und gegen diesen Lizenzvertrag verstoßen. Die Schutzfunktionen sammeln Daten über die Registrierung der Software, das System und das Netzwerk, in dem die Software installiert und benutzt wird, sowie über Zeitpunkt und Anzahl der Benutzungen. Diese Daten werden mittels einer Kommunikationsschnittstelle der Software über Netzwerkverbindungen und das Internet an Maxon übermittelt. Maxon verarbeitet die Daten zur Erfüllung dieses Lizenzvertrags und zum Schutz der Software vor unerlaubten Benutzungen. Der Benutzer darf die Schutzfunktionen nicht beseitigen oder umgehen und darf die Software nicht ohne die Schutzfunktionen benutzen. Durch das Deaktivieren der Funktion „Informationen an Maxon senden“ in der Software werden die Schutzfunktionen nicht deaktiviert. 
+
+
+ 	§ 11	Gewährleistung 	
+
+11.1	Maxon überlasst dem Benutzer die Software frei von Sach- und Rechtsmängeln.
+
+11.2	Maxon ist nicht zur Beseitigung von Sach- und Rechtsmängeln verpflichtet, die dadurch verursacht werden, dass die Software (1) entgegen den Bestimmungen dieses Lizenzvertrags benutzt wird, (2) in Systemen oder zusammen mit Hard- und Software benutzt wird, die dafür ungeeignet sind und von Maxon nicht freigegebenen wurden, oder (3) von dem Benutzer verändert wurde, sofern er nicht nachweist, dass der Mangel nicht dadurch verursacht wurde.
+
+11.3	Falls der Benutzer von einem Dritten in Anspruch genommen wird, weil die vertragsgemäße Benutzung der Software die Schutzrechte des Dritten verletzt, ist er verpflichtet, Maxon hierüber unverzüglich zu informieren, die Verteidigung gegen diese Ansprüche zu überlassen und Maxon auf deren Kosten angemessen zu unterstützen.
+
+11.4	Die Ansprüche des Benutzers wegen Sach- und Rechtsmängeln verjähren nach 24 Monaten, wenn der Benutzer ein Verbraucher ist, im Übrigen nach 12 Monaten. 
+
+ 	§ 12	Haftungsbeschränkung	
+
+12.1	Maxon haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Verletzung des Lebens, des Körpers oder der Gesundheit, gemäß den Bestimmungen des Produkthaftungsgesetzes oder im Fall einer übernommenen Garantie. 
+
+12.2	Maxons Haftung für leicht fahrlässige Verletzungen von Kardinalpflichten ist auf unmittelbare Schäden begrenzt, die für diesen Lizenzvertrag typisch sind und bei Ausführung des Vertrags vorhersehbar waren. Kardinalpflichten sind Pflichten der Maxon, die die Erfüllung dieses Lizenzvertrags ermöglichen, d.h. Voraussetzung für die Durchführung dieses Vertrags sind, und auf die sich der Benutzer verlassen können muss. Bei leichter Fahrlässigkeit haftet Maxon nicht für entgangenen Gewinn des Benutzers.
+
+12.3	Im Übrigen ist Maxons Haftung ausgeschlossen. 
+
+12.4	Diese Haftungsbeschränkung gilt auch für die persönliche Haftung der Mitarbeiter, Vertreter und Organe Maxons
+
+
+ 	§ 13	Datenschutz	
+
+13.1	Maxon befolgt bei der Verarbeitung personenbezogener Daten die geltenden gesetzlichen Bestimmungen. Informationen zum Datenschutz und Maxons Datenschutzerklärung sind im Internet verfügbar unter: https://www.maxon.net/privacy_policy_de
+
+13.2	Wenn die Software die Funktion „Informationen an Maxon senden” hat, kann der Benutzer diese Funktion während der Benutzung der Software aktivieren und deaktivieren. Die Aktivierung dieser Funktion bewirkt, dass die Software über die bestehende Netzwerkverbindung von Zeit zu Zeit automatisch Software- und Hardwareinformationen an Maxon sendet. Diese Informationen sind insbesondere die Version und die Gebiets- und Spracheinstellungen der Software, Systeminformationen über die Hardware sowie Daten über die Benutzung, Konfiguration und auftretende Probleme der Software. Die von dem Benutzer erstellten und bearbeiteten Inhalte und Dateien sowie persönliche Daten (Name oder Adresse) werden mit dieser Funktion nicht an Maxon gesendet. Maxon verarbeitet und benutzt die gesendeten Informationen zu statistischen Zwecken und zur Verbesserung ihrer Produkte und Dienste und wird sie nur mit Zustimmung des Benutzers an Dritte weitergeben oder zu anderen Zwecken benutzen. Maxon verknüpft die gesendeten Informationen nicht mit persönlichen Daten und benutzt sie nicht zur Identifizierung des Benutzers oder zur Erstellung von Benutzerprofilen.
+
+
+	§ 14	Allgemeine Bestimmungen	
+
+14.1	Leistungsänderungen sowie Nebenabreden, Änderungen und Ergänzungen dieses Lizenzvertrags bedürfen der Schriftform und müssen als solche gekennzeichnet sein.
+
+14.2	Wenn dieser Lizenzvertrag in mehreren Sprachen verfasst ist, ist ausschließlich die deutsche Fassung verbindlich und die anderen Fassungen sind nur informatorisch. 
+
+14.3	Wenn eine Bestimmung dieses Lizenzvertrags unwirksam oder undurchführbar ist oder eine Lücke hat, bleibt der Lizenzvertrag im Übrigen bestehen. Anstelle der unwirksamen oder undurchführbaren Bestimmung oder zur Ausfüllung der Lücke treten die gesetzlichen Bestimmungen.
+
+14.4	Wenn der Benutzer ein Unternehmen, eine juristische Person des öffentlichen Rechts oder ein Träger von öffentlich-rechtlichem Sondervermögen ist, ist Frankfurt am Main der ausschließliche Gerichtsstand. Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
+
+
+Stand: .November 2019
