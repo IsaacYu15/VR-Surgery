@@ -10,9 +10,12 @@ public class Rope : MonoBehaviour
     public LineRenderer rope;
     public LayerMask collMask;
 
-    public List<Transform> ropePositions { get; set; } = new List<Transform>();
+    public List<Transform> ropePositions = new List<Transform>();
 
-    private void Awake() => AddPosToRope(firstPos);
+    private void Awake()
+    {
+        AddPosToRope(firstPos);
+    }
 
     private void Update()
     {
@@ -68,5 +71,8 @@ public class Rope : MonoBehaviour
 
     }
 
-    private void LastSegmentGoToPlayerPos() => rope.SetPosition(rope.positionCount - 1, playerTip.position);
+    private void LastSegmentGoToPlayerPos()
+    {
+        rope.SetPosition(rope.positionCount - 1, playerTip.position);
+    }
 }
