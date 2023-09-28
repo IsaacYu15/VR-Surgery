@@ -28,12 +28,17 @@ public class Rope : MonoBehaviour
         RaycastHit hit;
         if (Physics.Linecast(playerTip.position, rope.GetPosition(ropePositions.Count - 2), out hit, collMask))
         {
-            ropePositions.RemoveAt(ropePositions.Count - 1);
 
-            GameObject go = new GameObject();
-            go.transform.position = hit.point;
-            go.transform.parent = hit.transform.root.transform;
-            AddPosToRope(go.transform);
+            if (Vector3.Distance (hit.point, ropePositions[ropePositions.Count-1].position) > 1) {
+
+                ropePositions.RemoveAt(ropePositions.Count - 1);
+
+                GameObject go = new GameObject();
+                go.transform.position = hit.point;
+                go.transform.parent = hit.transform.root.transform;
+                AddPosToRope(go.transform);
+            }
+
         }
     }
 
